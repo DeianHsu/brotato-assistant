@@ -1,0 +1,633 @@
+﻿类别	中文名	英文名	ID	来源	原生档位（0–3）	基础价值	武器类别	基础单发	原生冷却（帧）	缩放（1=100%）	暴击概率（0–1）	暴击倍率	套装	直接效果	资源路径
+状态行为	charm_enemy_effect_behavior_data	charm_enemy_effect_behavior_data	charm_enemy_effect_behavior_data	本体共用											res://effect_behaviors/enemies/charm_enemy_effect_behavior_data.tres
+状态行为	fire_trail_effect_behavior	fire_trail_effect_behavior	fire_trail_effect_behavior	本体共用											res://effect_behaviors/player/fire_trail_effect_behavior.tres
+状态行为	for_every_step_effect_behavior	for_every_step_effect_behavior	for_every_step_effect_behavior	本体共用											res://effect_behaviors/player/for_every_step_effect_behavior.tres
+状态行为	knockback_aura_effect_behavior	knockback_aura_effect_behavior	knockback_aura_effect_behavior	本体共用											res://effect_behaviors/player/knockback_aura_effect_behavior.tres
+状态行为	percent_damage_taken_enemy_behavior_data	percent_damage_taken_enemy_behavior_data	percent_damage_taken_enemy_behavior_data	本体共用											res://effect_behaviors/enemies/percent_damage_taken_enemy_behavior_data.tres
+首领	boss_crab	boss_crab	boss_crab	本体共用											res://entities/units/enemies/crash_zone/bosses/predator/predator_data.tres
+首领	boss_wizard	boss_wizard	boss_wizard	本体共用											res://entities/units/enemies/crash_zone/bosses/invoker/invoker_data.tres
+角色	学徒	Apprentice	character_apprentice	本体	0	1								effect stat_melee_damage→stats_on_level_up=2 | effect stat_ranged_damage→stats_on_level_up=1 | effect stat_elemental_damage→stats_on_level_up=1 | effect stat_engineering→stats_on_level_up=1 | effect stat_max_hp→stats_on_level_up=-2	res://items/characters/apprentice/apprentice_data.tres
+角色	军火商	Arms Dealer	character_arms_dealer	本体	0	1								effect weapons_price=-95 | effect stat_harvesting=30 | stat_gains_modifications effect_increase_stat_gains=33 | effect item_dangerous_bunny→starting_item=1 | effect minimum_weapons_in_shop=1 | effect destroy_weapons=1	res://items/characters/arms_dealer/arms_dealer_data.tres
+角色	技工	Artificer	character_artificer	本体	0	1								effect explosion_damage=175 | gain_stat_for_every_stat explosion_size=4 | class_bonus effect_weapon_class_bonus=100 | effect stat_percent_damage=-100 | stat_gains_modifications effect_reduce_stat_gains=-50	res://items/characters/artificer/artificer_data.tres
+角色	宝宝	Baby	character_baby	本体	0	1								effect stat_harvesting=12 | effect items_price=-20 | effect weapon_slot_upgrades=24 | effect weapon_slot=-5 | effect minimum_weapons_in_shop=1 | effect next_level_xp_needed=130	res://items/characters/baby/baby_data.tres
+角色	驯兽师	Beast Master	character_beast_master	本体	0	1								effect item_lootworm→starting_item=1 | effect weapon_slot=0 | gain_stat_for_every_stat stat_speed=2 | effect beast_master_effect=1 | effect stat_luck=10 | effect boosted_wanted_item_tag=1 | effect item_ratzilla→starting_item=1	res://items/characters/beast_master/beast_master_data.tres
+角色	斗士	Brawler	character_brawler	本体	0	1								class_bonus EFFECT_WEAPON_CLASS_BONUS=50 | effect weapon_fist_1→starting_weapon=1 | effect stat_dodge=15 | effect stat_range=-50 | effect stat_ranged_damage=-50	res://items/characters/brawler/brawler_data.tres
+角色	公牛	Bull	character_bull	本体	0	1								effect stat_max_hp=20 | effect stat_hp_regeneration=15 | effect stat_armor=10 | stat_gains_modifications effect_increase_stat_gains=50 | item_exploding explode_on_hit=1 | effect weapon_slot=0	res://items/characters/bull/bull_data.tres
+角色	大壮	Chunky	character_chunky	本体	0	1								stat_gains_modifications effect_increase_stat_gains=25 | gain_stat_for_every_stat stat_percent_damage=1 | effect consumable_heal=3 | effect stat_lifesteal=-100 | stat_gains_modifications effect_reduce_stat_gains=-50 | stat_gains_modifications effect_reduce_stat_gains=-50 | stat_gains_modifications effect_reduce_stat_gains=-100	res://items/characters/chunky/chunky_data.tres
+角色	狂人	Crazy	character_crazy	本体	0	1								class_bonus effect_weapon_class_bonus=100 | effect stat_attack_speed=25 | effect weapon_knife_1→starting_weapon=1 | effect stat_dodge=-30 | effect stat_engineering=-10 | effect stat_ranged_damage=-10	res://items/characters/crazy/crazy_data.tres
+角色	神秘生物	Cryptid	character_cryptid	本体	0	1								effect trees=6 | effect cryptid=12 | gain_stat_for_every_stat stat_hp_regeneration=3 | effect dodge_cap=70 | effect stat_attack_speed→temp_stats_on_dodge=3 | effect stat_lifesteal=-100 | effect stat_range=-100 | effect enemy_gold_drops=-50	res://items/characters/cryptid/cryptid_data.tres
+角色	赛博格	Cyborg	character_cyborg	本体	0	1								effect weapon_minigun_3→starting_weapon=1 | stat_gains_modifications effect_increase_stat_gains=200 | convert_stat stat_ranged_damage→convert_stats_half_wave=1 | stat_gains_modifications effect_reduce_stat_gains=-75 | stat_gains_modifications effect_reduce_stat_gains=-100 | stat_gains_modifications effect_reduce_stat_gains=-100	res://items/characters/cyborg/cyborg_data.tres
+角色	恶魔	Demon	character_demon	本体	0	1								convert_stat materials→convert_stats_end_of_wave=13 | effect hp_shop=1	res://items/characters/demon/demon_data.tres
+角色	医生	Doctor	character_doctor	本体	0	1								class_bonus EFFECT_WEAPON_CLASS_BONUS=200 | effect stat_hp_regeneration=5 | effect stat_harvesting=5 | stat_gains_modifications effect_increase_stat_gains=100 | effect stat_attack_speed=-100 | stat_gains_modifications effect_reduce_stat_gains=-50	res://items/characters/doctor/doctor_data.tres
+角色	工程师	Engineer	character_engineer	本体	0	1								effect stat_engineering=10 | stat_gains_modifications effect_increase_stat_gains=25 | effect weapon_wrench_1→starting_weapon=1 | effect group_structures=1 | stat_gains_modifications effect_reduce_stat_gains=-50	res://items/characters/engineer/engineer_data.tres
+角色	企业家	Entrepreneur	character_entrepreneur	本体	0	1								effect items_price=-25 | stat_gains_modifications effect_increase_stat_gains=50 | effect recycling_gains=25 | effect gain_pct_gold_start_wave=-100 | stat_gains_modifications EFFECT_REDUCE_STAT_GAINS=-50	res://items/characters/entrepreneur/entrepreneur_data.tres
+角色	探险家	Explorer	character_explorer	本体	0	1								effect trees=12 | effect item_lumberjack_shirt→starting_item=1 | effect stat_speed=10 | effect pickup_range=50 | effect map_size=33 | effect number_of_enemies=25 | effect enemy_gold_drops=-50 | effect enemy_speed=10 | effect stat_percent_damage=-40 | effect trees_start_wave=1	res://items/characters/explorer/explorer_data.tres
+角色	农夫	Farmer	character_farmer	本体	0	1								effect stat_harvesting=20 | effect harvesting_growth=3 | effect stat_harvesting→consumable_stats_while_max=1 | effect gold_drops=-50 | effect item_garden→starting_item=1	res://items/characters/farmer/farmer_data.tres
+角色	渔夫	Fisherman	character_fisherman	本体	0	1								effect stat_max_hp=5 | effect stat_harvesting=20 | effect item_bait→guaranteed_shop_items=1 | effect item_bait→specific_items_price=-100 | gain_stat_for_every_stat stat_harvesting=2 | effect upgraded_baits=1 | effect enemy_gold_drops=-40	res://items/characters/fisherman/fisherman_data.tres
+角色	博学家	Generalist	character_generalist	本体	0	1								gain_stat_for_every_stat stat_melee_damage=2 | gain_stat_for_every_stat stat_ranged_damage=1 | effect max_melee_weapons=3 | effect max_ranged_weapons=3	res://items/characters/generalist/generalist_data.tres
+角色	幽灵	Ghost	character_ghost	本体	0	1								class_bonus EFFECT_WEAPON_CLASS_BONUS=10 | effect stat_dodge=30 | effect dodge_cap=90 | effect stat_armor=-100	res://items/characters/ghost/ghost_data.tres
+角色	角斗士	Gladiator	character_gladiator	本体	0	1								effect stat_attack_speed→unique_weapon_effects=20 | effect stat_melee_damage=5 | effect no_ranged_weapons=1 | effect stat_attack_speed=-40 | effect stat_luck=-30	res://items/characters/gladiator/gladiator_data.tres
+角色	暴食	Glutton	character_glutton	本体	0	1								effect stat_luck=50 | effect explosion_damage→consumable_stats_while_max=1 | item_exploding explode_on_consumable=1 | effect items_price=25 | effect xp_gain=-25	res://items/characters/glutton/glutton_data.tres
+角色	魔像	Golem	character_golem	本体	0	1								effect stat_max_hp=20 | stat_gains_modifications effect_increase_stat_gains=33 | stat_gains_modifications effect_increase_stat_gains=33 | effect stat_attack_speed→stats_below_half_health=40 | effect stat_speed→stats_below_half_health=20 | effect no_heal=1	res://items/characters/golem/golem_data.tres
+角色	猎人	Hunter	character_hunter	本体	0	1								effect stat_range=100 | gain_stat_for_every_stat stat_percent_damage=1 | stat_gains_modifications effect_increase_stat_gains=25 | stat_gains_modifications effect_reduce_stat_gains=-100 | stat_gains_modifications effect_reduce_stat_gains=-33	res://items/characters/hunter/hunter_data.tres
+角色	杰克	Jack	character_jack	本体	0	1								effect damage_against_bosses=125 | effect gold_drops=200 | effect number_of_enemies=-70 | effect enemy_health=175 | effect enemy_damage=35	res://items/characters/jack/jack_data.tres
+角色	国王	King	character_king	本体	0	1								effect stat_luck=50 | effect stat_percent_damage→tier_iv_weapon_effects=25 | effect stat_attack_speed→tier_iv_weapon_effects=25 | gain_stat_for_every_stat stat_max_hp=5 | effect stat_percent_damage→tier_i_weapon_effects=-15 | effect stat_attack_speed→tier_i_weapon_effects=-15 | gain_stat_for_every_stat stat_max_hp=-2	res://items/characters/king/king_data.tres
+角色	骑士	Knight	character_knight	本体	0	1								gain_stat_for_every_stat stat_melee_damage=2 | effect stat_armor=3 | effect no_ranged_weapons=1 | effect min_weapon_tier=1 | stat_gains_modifications effect_reduce_stat_gains=-50 | stat_gains_modifications effect_reduce_stat_gains=-80	res://items/characters/knight/knight_data.tres
+角色	巫妖	Lich	character_lich	本体	0	1								effect stat_hp_regeneration=10 | effect stat_lifesteal=10 | chance_stat_damage stat_max_hp→dmg_when_heal=100 | stat_gains_modifications effect_reduce_stat_gains=-50	res://items/characters/lich/lich_data.tres
+角色	大嗓门	Loud	character_loud	本体	0	1								effect stat_percent_damage=30 | effect number_of_enemies=50 | effect stat_harvesting→stats_end_of_wave=-3	res://items/characters/loud/loud_data.tres
+角色	幸运星	Lucky	character_lucky	本体	0	1								effect stat_luck=100 | stat_gains_modifications effect_increase_stat_gains=25 | chance_stat_damage stat_luck→dmg_when_pickup_gold=15 | effect stat_attack_speed=-60 | effect xp_gain=-50	res://items/characters/lucky/lucky_data.tres
+角色	法师	Mage	character_mage	本体	0	1								stat_gains_modifications effect_increase_stat_gains=25 | effect item_snake→starting_item=1 | effect item_scared_sausage→starting_item=1 | stat_gains_modifications effect_reduce_stat_gains=-100 | stat_gains_modifications effect_reduce_stat_gains=-100 | stat_gains_modifications effect_reduce_stat_gains=-50	res://items/characters/mage/mage_data.tres
+角色	受虐狂	Masochist	character_masochist	本体	0	1								effect stat_percent_damage→temp_stats_on_hit=5 | effect stat_max_hp=10 | effect stat_hp_regeneration=20 | effect stat_armor=8 | effect stat_percent_damage=-100	res://items/characters/masochist/masochist_data.tres
+角色	多面手	Multitasker	character_multitasker	本体	0	1								effect stat_percent_damage=20 | effect weapon_slot=12 | effect stat_percent_damage→additional_weapon_effects=-5	res://items/characters/multitasker/multitasker_data.tres
+角色	异变体	Mutant	character_mutant	本体	0	1								effect next_level_xp_needed=-66 | effect items_price=50	res://items/characters/mutant/mutant_data.tres
+角色	老叟	Old	character_old	本体	0	1								effect enemy_speed=-25 | effect stat_harvesting=10 | effect map_size=-33 | effect number_of_enemies=-10 | effect stat_speed=-10	res://items/characters/old/old_data.tres
+角色	独臂	One-Armed	character_one_arm	本体	0	1								effect stat_attack_speed=200 | stat_gains_modifications effect_increase_stat_gains=100 | effect weapon_slot=-5 | effect weapon_set_bonus=3	res://items/characters/one_arm/one_arm_data.tres
+角色	和平主义者	Pacifist	character_pacifist	本体	0	1								effect pacifist=65 | effect item_lumberjack_shirt→starting_item=1 | effect stat_percent_damage=-100 | effect stat_engineering=-100	res://items/characters/pacifist/pacifist_data.tres
+角色	游侠	Ranger	character_ranger	本体	0	1								effect stat_range=50 | effect weapon_pistol_1→starting_weapon=1 | stat_gains_modifications effect_increase_stat_gains=50 | effect no_melee_weapons=1 | stat_gains_modifications effect_reduce_stat_gains=-25	res://items/characters/ranger/ranger_data.tres
+角色	叛徒	Renegade	character_renegade	本体	0	1								effect projectiles=2 | effect piercing=1 | gain_stat_for_every_stat stat_percent_damage=10 | effect no_melee_weapons=1 | effect stat_percent_damage=-400 | effect accuracy=-50 | stat_gains_modifications effect_reduce_stat_gains=-80	res://items/characters/renegade/renegade_data.tres
+角色	节俭者	Saver	character_saver	本体	0	1								effect stat_harvesting=15 | gain_stat_for_every_stat stat_percent_damage=1 | effect item_piggy_bank→starting_item=1 | effect items_price=50	res://items/characters/saver/saver_data.tres
+角色	病人	Sick	character_sick	本体	0	1								effect stat_max_hp=12 | effect stat_lifesteal=25 | effect lose_hp_per_second=1 | effect stat_hp_regeneration=-100	res://items/characters/sick/sick_data.tres
+角色	士兵	Soldier	character_soldier	本体	0	1								effect stat_percent_damage=50 | effect stat_attack_speed=50 | effect stat_speed=10 | effect pickup_range=200 | effect knockback=15 | effect can_attack_while_moving=0	res://items/characters/soldier/soldier_data.tres
+角色	飞毛腿	Speedy	character_speedy	本体	0	1								effect stat_speed=30 | gain_stat_for_every_stat stat_melee_damage=1 | effect stat_armor→temp_stats_while_not_moving=-100 | effect stat_armor=-3	res://items/characters/speedy/speedy_data.tres
+角色	网络主播	Streamer	character_streamer	本体	0	1								double_value percent_materials→temp_stats_while_not_moving=3/25 | effect stat_percent_damage→temp_stats_while_moving=40 | effect stat_attack_speed→temp_stats_while_moving=40 | gain_stat_for_every_stat stat_armor=2 | effect gold_drops=-50 | gain_stat_for_every_stat stat_percent_damage=-1 | gain_stat_for_every_stat stat_speed=-1	res://items/characters/streamer/streamer_data.tres
+角色	科技法师	Technomage	character_technomage	本体	0	1								effect item_turret→starting_item=2 | gain_stat_for_every_stat structure_attack_speed=5 | gain_stat_for_every_stat stat_elemental_damage=2 | effect next_level_xp_needed=75 | stat_gains_modifications effect_reduce_stat_gains=-100 | stat_gains_modifications effect_reduce_stat_gains=-100	res://items/characters/technomage/technomage_data.tres
+角色	流浪汉	Vagabond	character_vagabond	本体	0	1								effect all_weapons_count_for_sets=1 | effect no_duplicate_weapons=1 | effect stat_armor=-5 | effect stat_dodge=-5 | stat_gains_modifications effect_reduce_stat_gains=-50 | stat_gains_modifications effect_reduce_stat_gains=-50	res://items/characters/vagabond/vagabond_data.tres
+角色	吸血鬼	Vampire	character_vampire	本体	0	1								gain_stat_for_every_stat stat_percent_damage=2 | gain_stat_for_every_stat stat_lifesteal=1 | gain_stat_for_every_stat stat_armor=1 | stat_gains_modifications EFFECT_REDUCE_STAT_GAINS=-25 | effect stat_percent_damage=-60 | effect stat_hp_regeneration=-100 | effect consumable_heal=-100	res://items/characters/vampire/vampire_data.tres
+角色	全能者	Well-Rounded	character_well_rounded	本体	0	1								effect stat_max_hp=5 | effect stat_speed=5 | effect stat_harvesting=8	res://items/characters/well_rounded/well_rounded_data.tres
+角色	野人	Wildling	character_wildling	本体	0	1								class_bonus EFFECT_WEAPON_CLASS_BONUS=30 | effect weapon_stick_1→starting_weapon=1 | effect max_weapon_tier=1	res://items/characters/wildling/wildling_data.tres
+角色	伤者	Wounded	character_wounded	本体	0	1								effect die_in_one_hit→DIE_IN_ONE_HIT=1 | effect item_tardigrade→starting_item=1 | effect stat_speed=5 | effect stat_harvesting=8 | effect =0	res://items/characters/wounded/wounded_data.tres
+消耗品	果实	Fruit	consumable_fruit	本体共用	0	1								weapon_null =3	res://items/consumables/fruit/fruit_data.tres
+消耗品	道具箱	Item Box	consumable_item_box	本体共用	1	1								weapon_null =3	res://items/consumables/item_box/item_box_data.tres
+消耗品	传说道具箱	Legendary Item Box	consumable_legendary_item_box	本体共用	3	1								weapon_null =100	res://items/consumables/legendary_item_box/legendary_item_box_data.tres
+难度	危险0	Danger 0	difficulty_0	本体共用	0	0								weapon_null effect_no_modifiers=0	res://items/difficulties/0/difficulty_0.tres
+难度	危险1	Danger 1	difficulty_1	本体共用	1	1								weapon_null EFFECT_NEW_ENEMIES=0	res://items/difficulties/1/difficulty_1.tres
+难度	危险2	Danger 2	difficulty_2	本体共用	2	2								weapon_null EFFECT_NEW_ENEMIES=0 | weapon_null effect_elites=0	res://items/difficulties/2/difficulty_2.tres
+难度	危险3	Danger 3	difficulty_3	本体共用	3	3								effect danger_enemy_damage=12 | effect danger_enemy_health=12 | weapon_null EFFECT_NEW_ENEMIES=0 | weapon_null effect_elites=0	res://items/difficulties/3/difficulty_3.tres
+难度	危险4	Danger 4	difficulty_4	本体共用	4	4								effect danger_enemy_damage=26 | effect danger_enemy_health=26 | weapon_null EFFECT_NEW_ENEMIES=0 | weapon_null effect_elites=0 | weapon_null effect_more_elites=0	res://items/difficulties/4/difficulty_4.tres
+难度	危险5	Danger 5	difficulty_5	本体共用	5	5								effect danger_enemy_damage=40 | effect danger_enemy_health=40 | weapon_null EFFECT_NEW_ENEMIES=0 | weapon_null effect_elites=0 | weapon_null effect_more_elites=0 | effect double_boss=1	res://items/difficulties/5/difficulty_5.tres
+难度	噩梦	Nightmare	difficulty_6	本体共用	6	6								effect danger_enemy_damage=60 | effect danger_enemy_health=60 | effect danger_enemy_speed=10 | effect inflation_modifier=10 | weapon_null EFFECT_NEW_ENEMIES=0 | weapon_null effect_elites=0 | weapon_null effect_more_elites=0 | effect double_boss=1 | effect bullet_hell_event=1 | effect fog_of_war_event=1	res://items/difficulties/6-Nightmare/difficulty_6.tres
+单位图鉴	外星人宝宝	Baby Alien	baby_alien	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/baby_alien/baby_alien_item.tres
+单位图鉴	肿胀生成者	Bloated Spawner	bloated_spawner	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/bloated_spawner/bloated_spawner_item.tres
+单位图鉴	壮怪	Bruiser	bruiser	本体共用	0	1		2							res://entities/units/enemies/crash_zone/basic/bruiser/bruiser_item.tres
+单位图鉴	强化怪	Buffer	buffer	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/buffer/buffer_item.tres
+单位图鉴	屠夫	Butcher	butcher	本体共用	0	1		1							res://entities/units/enemies/crash_zone/elites/butcher/butcher_item.tres
+单位图鉴	冲刺怪	Charger	charger	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/charger/charger_item.tres
+单位图鉴	追击怪	Chaser	chaser	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/chaser/chaser_item.tres
+单位图鉴	巨神怪	Colossus	colossus	本体共用	0	1		1							res://entities/units/enemies/crash_zone/elites/colossus/colossus_item.tres
+单位图鉴	腐化强化怪	Corrupted Buffer	corrupted_buffer	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/corrupted_buffer/corrupted_buffer_item.tres
+单位图鉴	鳄鱼	Croc	croc	本体共用	0	1		1							res://entities/units/enemies/crash_zone/elites/croc/croc_item.tres
+单位图鉴	凶暴成瘾怪	Dire Junkie	dire_junkie	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/dire_junkie/dire_junkie_item.tres
+单位图鉴	吞吞怪	Gobbler	evil_mob	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/evil_mob/evil_mob_item.tres
+单位图鉴	带鳍外星人	Fin Alien	fin_alien	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/fin_alien/fin_alien_item.tres
+单位图鉴	苍蝇	Fly	fly	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/fly/fly_item.tres
+单位图鉴	石像鬼	Gargoyle	gargoyle	本体共用	0	1		1							res://entities/units/enemies/crash_zone/elites/gargoyle/gargoyle_item.tres
+单位图鉴	治疗者	Healer	healer	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/healer/healer_item.tres
+单位图鉴	头盔外星人	Helmet Alien	helmet_alien	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/helmet_alien/helmet_alien_item.tres
+单位图鉴	角盔壮怪	Horned Bruiser	horned_bruiser	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/horned_bruiser/horned_bruiser_item.tres
+单位图鉴	角盔冲刺怪	Horned Charger	horned_charger	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/horned_charger/horned_charger_item.tres
+单位图鉴	角盔苍蝇	Horned Fly	horned_fly	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/horned_fly/horned_fly_item.tres
+单位图鉴	角盔喷吐怪	Horned Spitter	horned_spitter	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/horned_spitter/horned_spitter_item.tres
+单位图鉴	感染斩击者之卵	Infected Slasher Egg	infected_slasher_egg	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/infected_slasher_egg/infected_slasher_egg_item.tres
+单位图鉴	唤魔者	Invoker	invoker	本体共用	0	1		1							res://entities/units/enemies/crash_zone/bosses/invoker/invoker_item.tres
+单位图鉴	成瘾怪	Junkie	junkie	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/junkie/junkie_item.tres
+单位图鉴	七鳃鳗	Lamprey	lamprey	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/lamprey/lamprey_item.tres
+单位图鉴	搜刮者	Looter	looter	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/looter/looter_item.tres
+单位图鉴	疯狂斩击者	Mad Slasher	mad_slasher	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/mad_slasher/mad_slasher_item.tres
+单位图鉴	螳螂	Mantis	mantis	本体共用	0	1		1							res://entities/units/enemies/crash_zone/elites/mantis/mantis_item.tres
+单位图鉴	魔母	Mother	mom	本体共用	0	1		1							res://entities/units/enemies/crash_zone/elites/mom/mom_item.tres
+单位图鉴	僧侣	Monk	monk	本体共用	0	1		1							res://entities/units/enemies/crash_zone/elites/monk/monk_item.tres
+单位图鉴	猎杀者	Predator	predator	本体共用	0	1		1							res://entities/units/enemies/crash_zone/bosses/predator/predator_item.tres
+单位图鉴	追猎怪	Pursuer	pursuer	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/pursuer/pursuer_item.tres
+单位图鉴	犀牛	Rhino	rhino	本体共用	0	1		1							res://entities/units/enemies/crash_zone/elites/rhino/rhino_item.tres
+单位图鉴	斩击者	Slasher	slasher	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/slasher/slasher_item.tres
+单位图鉴	斩击者之卵	Slasher Egg	slasher_egg	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/slasher_egg/slasher_egg_item.tres
+单位图鉴	生成者	Spawner	spawner	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/spawner/spawner_item.tres
+单位图鉴	喷吐怪	Spitter	spitter	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/spitter/spitter_item.tres
+单位图鉴	触手	Tentacle	tentacle	本体共用	0	1		1							res://entities/units/enemies/crash_zone/basic/tentacle/tentacle_item.tres
+道具	酸液	Acid	item_acid	本体	1	65								effect stat_max_hp=8 | effect stat_dodge=-2 | effect knockback=-2	res://items/all/00_base_game/acid/acid_data.tres
+道具	肾上腺素	Adrenaline	item_adrenaline	本体	2	60								effect stat_dodge=5 | chance_stat_damage →heal_on_dodge=5	res://items/all/00_base_game/adrenaline/adrenaline_data.tres
+道具	幼年异形	Alien Baby	item_alien_baby	本体	2	80								effect stat_max_hp=15 | effect enemy_health=10	res://items/all/00_base_game/alien_baby/alien_baby_data.tres
+道具	异形眼球	Alien Eyes	item_alien_eyes	本体	1	50								projectile alien_eyes=6	res://items/all/00_base_game/alien_eyes/alien_eyes_data.tres
+道具	外星魔法	Alien Magic	item_alien_magic	本体	2	85								effect stat_max_hp=8 | effect stat_hp_regeneration=3 | effect stat_luck=-8	res://items/all/00_base_game/alien_magic/alien_magic_data.tres
+道具	异形之舌	Alien Tongue	item_alien_tongue	本体	0	25								effect pickup_range=30 | effect knockback=1	res://items/all/00_base_game/alien_tongue/alien_tongue_data.tres
+道具	异形虫	Alien Worm	item_alien_worm	本体	0	15								effect stat_max_hp=3 | effect stat_hp_regeneration=2 | effect consumable_heal=-1	res://items/all/00_base_game/alien_worm/alien_worm_data.tres
+道具	合金	Alloy	item_alloy	本体	2	80								effect stat_melee_damage=3 | effect stat_ranged_damage=3 | effect stat_elemental_damage=3 | effect stat_engineering=3 | effect stat_crit_chance=5 | effect stat_dodge=-6	res://items/all/00_base_game/alloy/alloy_data.tres
+道具	铁砧	Anvil	item_anvil	本体	3	120								effect stat_armor→upgrade_random_weapon=2	res://items/all/00_base_game/anvil/anvil_data.tres
+道具	象宝宝	Baby Elephant	item_baby_elephant	本体	0	22								chance_stat_damage stat_luck→dmg_when_pickup_gold=25	res://items/all/00_base_game/baby_elephant/baby_elephant_data.tres
+道具	壁虎宝宝	Baby Gecko	item_baby_gecko	本体	0	18								effect stat_range=10 | effect instant_gold_attracting=25	res://items/all/00_base_game/baby_gecko/baby_gecko_data.tres
+道具	长胡子的婴儿	Baby with a Beard	item_baby_with_a_beard	本体	2	100								projectile projectiles_on_death=1 | effect stat_range=-50	res://items/all/00_base_game/baby_with_a_beard/baby_with_a_beard_data.tres
+道具	背包	Bag	item_bag	本体	0	15								effect item_box_gold=15 | effect stat_speed=-1	res://items/all/00_base_game/bag/bag_data.tres
+道具	诱饵	Bait	item_bait	本体	1	25								effect stat_percent_damage=8 | extra_enemy extra_enemies_next_wave=1	res://items/all/00_base_game/bait/bait_data.tres
+道具	链球	Ball and Chain	item_ball_and_chain	本体	2	75								effect stat_percent_damage=15 | effect stat_armor=3 | effect knockback=5 | effect stat_speed=-3 | weapon_cooldown minimum_weapon_cooldowns=45	res://items/all/00_base_game/ball_and_chain/ball_and_chain_data.tres
+道具	头巾	Bandana	item_bandana	本体	2	75								effect piercing=1 | effect stat_percent_damage=-10	res://items/all/00_base_game/bandana/bandana_data.tres
+道具	旗帜	Banner	item_banner	本体	1	55								effect stat_range=20 | effect stat_attack_speed=10 | effect knockback=-5	res://items/all/00_base_game/banner/banner_data.tres
+道具	路障	Barricade	item_barricade	本体	2	75								effect knockback=3 | effect stat_armor→temp_stats_while_not_moving=8 | effect stat_speed=-5	res://items/all/00_base_game/barricade/barricade_data.tres
+道具	蝙蝠	Bat	item_bat	本体	0	20								effect stat_lifesteal=2 | effect stat_harvesting=-2	res://items/all/00_base_game/bat/bat_data.tres
+道具	豆老师	Bean Teacher	item_bean_teacher	本体	2	70								effect xp_gain=50 | effect stat_lifesteal=-2	res://items/all/00_base_game/bean_teacher/bean_teacher_data.tres
+道具	无檐小便帽	Beanie	item_beanie	本体	0	20								effect stat_speed=4 | effect stat_range=-6	res://items/all/00_base_game/beanie/beanie_data.tres
+道具	巨臂	Big Arms	item_big_arms	本体	3	105								effect stat_melee_damage=12 | effect stat_ranged_damage=6 | effect knockback=3 | effect stat_attack_speed=-3 | effect stat_speed=-3	res://items/all/00_base_game/big_arms/big_arms_data.tres
+道具	黑带	Black Belt	item_black_belt	本体	1	50								effect xp_gain=25 | effect stat_melee_damage=3 | effect knockback=3 | effect stat_luck=-8	res://items/all/00_base_game/black_belt/black_belt_data.tres
+道具	焰蜥蜴	Blazemander	item_blazemander	免费更新 Paws & Claws	1	40								blazemander =1	res://items/all/03_paws_n_claws/blazemander/blazemander.tres
+道具	眼罩	Blindfold	item_blindfold	本体	1	45								effect stat_crit_chance=5 | effect stat_dodge=5 | effect stat_range=-15	res://items/all/00_base_game/blindfold/blindfold_data.tres
+道具	献血	Blood Donation	item_blood_donation	本体	2	50								effect stat_harvesting=40 | effect lose_hp_per_second=1	res://items/all/00_base_game/blood_donation/blood_donation_data.tres
+道具	血蛭	Blood Leech	item_blood_leech	本体	1	45								effect stat_lifesteal=2 | effect stat_hp_regeneration=2 | effect stat_harvesting=-3	res://items/all/00_base_game/blood_leech/blood_leech_data.tres
+道具	血淋淋的手	Bloody Hand	item_bloody_hand	本体	3	110								effect stat_lifesteal=10 | gain_stat_for_every_stat stat_percent_damage=2 | effect lose_hp_per_second=1	res://items/all/00_base_game/bloody_hand/bloody_hand_data.tres
+道具	沸水	Boiling Water	item_boiling_water	本体	0	30								effect stat_elemental_damage=2 | effect stat_max_hp=-1	res://items/all/00_base_game/boiling_water/boiling_water_data.tres
+道具	Bonk狗	Bonk Dog	item_bonk_dog	免费更新 Paws & Claws	1	40								bonk_dog =1	res://items/all/03_paws_n_claws/bonk_dog/bonk_dog.tres
+道具	书本	Book	item_book	本体	0	15								effect stat_engineering=2 | effect stat_elemental_damage=1 | effect stat_luck=-1	res://items/all/00_base_game/book/book_data.tres
+道具	布雷机器人	Bot-O-Mine	item_bot_o_mine	免费更新 Paws & Claws	1	55								bot_o_mine =1	res://items/all/03_paws_n_claws/bot_o_mine/bot_o_mine.tres
+道具	圆顶礼帽	Bowler Hat	item_bowler_hat	本体	2	75								effect stat_luck=15 | effect stat_harvesting=18 | effect stat_attack_speed=-5 | effect stat_crit_chance=-3	res://items/all/00_base_game/bowler_hat/bowler_hat_data.tres
+道具	拳击手套	Boxing Glove	item_boxing_glove	本体	0	18								effect stat_melee_damage=1 | effect knockback=3	res://items/all/00_base_game/boxing_glove/boxing_glove_data.tres
+道具	破损沙漏	Broken Hourglass	item_broken_hourglass	免费更新 New Dawn	3	1								effect =0 | effect hp_start_next_wave=-100	res://items/all/02_new_dawn/hourglass/broken_hourglass_data.tres
+道具	裂口	Broken Mouth	item_broken_mouth	本体	0	25								effect stat_max_hp=5 | effect stat_hp_regeneration=-1	res://items/all/00_base_game/broken_mouth/broken_mouth_data.tres
+道具	蝴蝶	Butterfly	item_butterfly	本体	0	30								effect stat_lifesteal=2 | effect stat_elemental_damage=-1	res://items/all/00_base_game/butterfly/butterfly_data.tres
+道具	蛋糕	Cake	item_cake	本体	0	15								effect stat_max_hp=3 | effect stat_percent_damage=-1	res://items/all/00_base_game/cake/cake_data.tres
+道具	篝火	Campfire	item_campfire	本体	1	40								effect stat_elemental_damage=2 | effect stat_hp_regeneration=2 | effect stat_speed=-2 | effect fog_visibility=50	res://items/all/00_base_game/campfire/campfire_data.tres
+道具	蜡烛	Candle	item_candle	本体	2	65								effect stat_elemental_damage=4 | effect stat_hp_regeneration=1 | effect number_of_enemies=-10 | effect stat_percent_damage=-5 | effect fog_visibility=25	res://items/all/00_base_game/candle/candle_data.tres
+道具	糖果袋	Candy Bag	item_candy_bag	免费更新 New Dawn	2	70								double_value gain_random_primary_stats_on_go_to_next_wave=8/100 | effect extra_elite_next_wave_chance=10	res://items/all/02_new_dawn/candy_bag/candy_bag_data.tres
+道具	斗篷	Cape	item_cape	本体	3	110								effect stat_lifesteal=5 | effect stat_dodge=20 | effect stat_melee_damage=-2 | effect stat_ranged_damage=-2 | effect stat_elemental_damage=-2	res://items/all/00_base_game/cape/cape_data.tres
+道具	猫特林机枪	Catling Gun	item_catling_gun	免费更新 Paws & Claws	1	34								catling_gun =1	res://items/all/03_paws_n_claws/catling_gun/catling_gun.tres
+道具	芹菜茶	Celery Tea	item_celery_tea	本体	1	35								effect xp_gain→stats_end_of_wave=5 | effect xp_gain→stats_next_wave=50 | effect enemy_health→stats_next_wave=100	res://items/all/00_base_game/celery_tea/celery_tea_data.tres
+道具	变色龙	Chameleon	item_chameleon	本体	2	70								effect stat_dodge=3 | effect stat_dodge→temp_stats_while_not_moving=20 | effect stat_percent_damage=-4	res://items/all/00_base_game/chameleon/chameleon_data.tres
+道具	木炭	Charcoal	item_charcoal	本体	0	20								effect stat_elemental_damage=1 | effect stat_melee_damage=2 | effect stat_harvesting=-2	res://items/all/00_base_game/charcoal/charcoal_data.tres
+道具	利爪树	Claw Tree	item_claw_tree	本体	0	20								effect stat_melee_damage=1 | effect stat_crit_chance=3 | effect stat_max_hp=-1	res://items/all/00_base_game/claw_tree/claw_tree_data.tres
+道具	机械黄蜂	Clockwork Wasp	item_clockwork_wasp	本体	1	45								effect structure_attack_speed=10 | effect stat_speed=5	res://items/all/00_base_game/clockwork_wasp/clockwork_wasp_data.tres
+道具	三叶草	Clover	item_clover	本体	2	65								effect stat_luck=20 | effect stat_dodge=6 | effect stat_lifesteal=-2	res://items/all/00_base_game/clover/clover_data.tres
+道具	咖啡	Coffee	item_coffee	本体	0	20								effect stat_attack_speed=10 | effect stat_percent_damage=-2	res://items/all/00_base_game/coffee/coffee_data.tres
+道具	齿轮	Cog	item_cog	本体	1	35								effect stat_engineering=4 | effect knockback=1 | effect stat_percent_damage=-4	res://items/all/00_base_game/cog/cog_data.tres
+道具	线圈	Coil	item_coil	本体	2	70								effect knockback=5 | gain_stat_for_every_stat stat_percent_damage=1	res://items/all/00_base_game/coil/coil_data.tres
+道具	社区支持	Community Support	item_community_support	本体	2	75								gain_stat_for_every_stat stat_attack_speed=1 | effect stat_armor=-2	res://items/all/00_base_game/community_support/community_support_data.tres
+道具	指南针	Compass	item_compass	本体	1	40								effect stat_speed=5 | effect stat_engineering=3 | effect stat_crit_chance=-3	res://items/all/00_base_game/compass/compass_data.tres
+道具	优惠券	Coupon	item_coupon	本体	0	15								effect items_price=-5	res://items/all/00_base_game/coupon/coupon_data.tres
+道具	王冠	Crown	item_crown	本体	2	70								effect harvesting_growth=8	res://items/all/00_base_game/crown/crown_data.tres
+道具	萌萌猴	Cute Monkey	item_cute_monkey	本体	0	25								effect heal_when_pickup_gold=8 | effect stat_ranged_damage=-1	res://items/all/00_base_game/cute_monkey/cute_monkey_data.tres
+道具	赛博球	Cyberball	item_cyberball	本体	1	30								chance_stat_damage stat_luck→dmg_when_death=25	res://items/all/00_base_game/cyberball/cyberball_data.tres
+道具	独眼虫	Cyclops Worm	item_cyclops_worm	本体	1	45								effect stat_percent_damage=12 | effect stat_range=-12	res://items/all/00_base_game/cyclops_worm/cyclops_worm_data.tres
+道具	危险的兔子	Dangerous Bunny	item_dangerous_bunny	本体	1	30								effect free_rerolls=1	res://items/all/00_base_game/dangerous_bunny/dangerous_bunny_data.tres
+道具	腐肉	Decomposing Flesh	item_decomposing_flesh	本体	1	30								effect stat_lifesteal→stats_on_level_up=1 | effect stat_max_hp→stats_on_level_up=-1	res://items/all/00_base_game/decomposing_flesh/decomposing_flesh_data.tres
+道具	有缺陷的增强剂	Defective Steroids	item_defective_steroids	本体	0	20								effect stat_max_hp=2 | effect stat_melee_damage=2 | effect stat_attack_speed=-3	res://items/all/00_base_game/defective_steroids/defective_steroids_data.tres
+道具	执照	Diploma	item_diploma	本体	3	90								effect stat_engineering=10 | effect xp_gain=50 | effect stat_max_hp=-3	res://items/all/00_base_game/diploma/diploma_data.tres
+道具	蛾医生	Doc Moth	item_doc_moth	免费更新 Paws & Claws	1	55								doc_moth =1	res://items/all/03_paws_n_claws/doc_moth/doc_moth.tres
+道具	胶带	Duct Tape	item_duct_tape	本体	0	20								effect stat_armor=1 | effect stat_engineering=1 | effect stat_max_hp=-2	res://items/all/00_base_game/duct_tape/duct_tape_data.tres
+道具	炸药	Dynamite	item_dynamite	本体	0	20								effect explosion_damage=15	res://items/all/00_base_game/dynamite/dynamite_data.tres
+道具	能量手环	Energy Bracelet	item_energy_bracelet	本体	1	55								effect stat_crit_chance=4 | effect stat_elemental_damage=2 | effect stat_ranged_damage=-2	res://items/all/00_base_game/energy_bracelet/energy_bracelet_data.tres
+道具	Esty的沙发	Esty’s Couch	item_estys_couch	本体	3	100								effect stat_max_hp=5 | gain_stat_for_every_stat stat_hp_regeneration=2 | effect stat_speed=-20	res://items/all/00_base_game/estys_couch/estys_couch_data.tres
+道具	吞吞怪之帽	Gobbler’s Hat	item_evil_hat	免费更新 New Dawn	3	130								effect gold_drops=70 | effect stat_speed=-15 | effect stat_dodge=-10	res://items/all/02_new_dawn/evil_hat/evil_hat.tres
+道具	外骨骼	Exoskeleton	item_exoskeleton	本体	3	90								effect stat_armor=3 | effect stat_crit_chance=5 | effect stat_engineering=5 | effect stat_speed=5 | effect stat_hp_regeneration=-2 | effect stat_lifesteal=-2	res://items/all/00_base_game/exoskeleton/exoskeleton_data.tres
+道具	爆裂弹	Explosive Shells	item_explosive_shells	本体	3	100								effect explosion_damage=60 | effect explosion_size=15 | effect stat_percent_damage=-15	res://items/all/00_base_game/explosive_shells/explosive_shells_data.tres
+道具	另一个胃	Extra Stomach	item_extra_stomach	本体	3	100								double_value stat_max_hp→consumable_stats_while_max=1/8	res://items/all/00_base_game/extra_stomach/extra_stomach_data.tres
+道具	眼部手术	Eyes Surgery	item_eyes_surgery	本体	1	60								effect burning_cooldown_reduction=20 | effect stat_elemental_damage=1 | effect stat_range=-10	res://items/all/00_base_game/eyes_surgery/eye_surgery_data.tres
+道具	小精灵	Fairy	item_fairy	本体	2	85								gain_stat_for_every_stat stat_hp_regeneration=1 | gain_stat_for_every_stat stat_hp_regeneration=-3	res://items/all/00_base_game/fairy/fairy_data.tres
+道具	肥料	Fertilizer	item_fertilizer	本体	0	15								effect stat_harvesting=8 | effect stat_melee_damage=-1	res://items/all/00_base_game/fertilizer/fertilizer_data.tres
+道具	鳍	Fin	item_fin	本体	2	65								effect stat_speed=10 | effect stat_lifesteal=3 | effect stat_luck=-8	res://items/all/00_base_game/fin/fin_data.tres
+道具	焦点	Focus	item_focus	本体	3	110								effect stat_percent_damage=30 | effect stat_attack_speed→unique_weapon_effects=-3	res://items/all/00_base_game/focus/focus_data.tres
+道具	鲜肉	Fresh Meat	item_fresh_meat	免费更新 New Dawn	0	25								effect stat_lifesteal=2 | effect stat_hp_regeneration=-1	res://items/all/02_new_dawn/fresh_meat/fresh_meat_data.tres
+道具	炒饭	Fried Rice	item_fried_rice	本体	2	60								gain_stat_for_every_stat stat_hp_regeneration=1	res://items/all/00_base_game/fried_rice/fried_rice_data.tres
+道具	冰冻的心	Frozen Heart	item_frozen_heart	本体	2	90								effect stat_elemental_damage=8 | effect stat_crit_chance=5 | effect stat_elemental_damage→weapon_scaling_stats=10 | effect burning_cooldown_reduction=-100	res://items/all/00_base_game/frozen_heart/frozen_heart_data.tres
+道具	果篮	Fruit Basket	item_fruit_basket	免费更新 New Dawn	1	45								effect enemy_fruit_drops=1 | effect stat_hp_regeneration=-3	res://items/all/02_new_dawn/fruit_basket/fruit_basket_data.tres
+道具	燃料箱	Fuel Tank	item_fuel_tank	本体	1	45								effect stat_elemental_damage=4 | effect stat_melee_damage=-1 | effect stat_ranged_damage=-1	res://items/all/00_base_game/fuel_tank/fuel_tank_data.tres
+道具	赌博筹码	Gambling Token	item_gambling_token	本体	1	50								effect stat_dodge=8 | effect stat_armor=-1	res://items/all/00_base_game/gambling_token/gambling_token_data.tres
+道具	花园	Garden	item_garden	本体	1	50								turret =1	res://items/all/00_base_game/garden/garden_data.tres
+道具	外星绅士	Gentle Alien	item_gentle_alien	本体	0	30								effect stat_max_hp=2 | effect stat_percent_damage=5 | effect number_of_enemies=5	res://items/all/00_base_game/gentle_alien/gentle_alien_data.tres
+道具	幽灵服	Ghost Outfit	item_ghost_outfit	免费更新 New Dawn	2	80								effect dodge_cap=70 | effect stat_dodge=10 | effect stat_speed=-5 | effect stat_armor=-3	res://items/all/02_new_dawn/ghost_outfit/ghost_outfit_data.tres
+道具	巨型带	Giant Belt	item_giant_belt	本体	3	110								double_value giant_crit_damage=10/1	res://items/all/00_base_game/giant_belt/giant_belt_data.tres
+道具	玻璃大炮	Glass Cannon	item_glass_cannon	本体	2	75								effect stat_percent_damage=25 | effect stat_armor=-3	res://items/all/00_base_game/glass_cannon/glass_cannon_data.tres
+道具	眼镜	Glasses	item_glasses	本体	0	20								effect stat_range=20	res://items/all/00_base_game/glasses/glasses_data.tres
+道具	地精	Gnome	item_gnome	本体	3	100								effect stat_melee_damage=10 | effect stat_elemental_damage=10 | effect stat_range=-20 | effect pickup_range=-20	res://items/all/00_base_game/gnome/gnome_data.tres
+道具	山羊头骨	Goat Skull	item_goat_skull	本体	0	25								effect stat_melee_damage=3 | effect stat_crit_chance=-2	res://items/all/00_base_game/goat_skull/goat_skull_data.tres
+道具	希腊火	Greek Fire	item_greek_fire	本体	3	100								double_value burning_enemy_hp_percent_damage=10/1 | effect fog_visibility=75	res://items/all/00_base_game/greek_fire/greek_fire_data.tres
+道具	Grind的魔法绿叶	Grind's Magical Leaf	item_grinds_magical_leaf	本体	3	110								effect stat_max_hp→stats_end_of_wave=3 | effect stat_hp_regeneration→stats_end_of_wave=1 | effect stat_lifesteal→stats_end_of_wave=1	res://items/all/00_base_game/grinds_magical_leaf/grinds_magical_leaf_data.tres
+道具	软糖狂战士	Gummy Berserker	item_gummy_berserker	本体	0	25								effect stat_attack_speed=5 | effect stat_range=25 | effect stat_armor=-1	res://items/all/00_base_game/gummy_berserker/gummy_berserker_data.tres
+道具	手铐	Handcuffs	item_handcuffs	本体	2	80								effect stat_melee_damage=8 | effect stat_ranged_damage=8 | effect stat_elemental_damage=8 | stat_cap hp_cap=0	res://items/all/00_base_game/handcuffs/handcuffs_data.tres
+道具	头部创伤	Head Injury	item_head_injury	本体	0	25								effect stat_percent_damage=6 | effect stat_range=-8	res://items/all/00_base_game/head_injury/head_injury_data.tres
+道具	重型子弹	Heavy Bullets	item_heavy_bullets	本体	3	100								effect stat_ranged_damage=5 | effect stat_percent_damage=10 | effect stat_range=10 | effect stat_attack_speed=-5 | effect stat_crit_chance=-5	res://items/all/00_base_game/heavy_bullets/heavy_bullets_data.tres
+道具	刺猬	Hedgehog	item_hedgehog	本体	0	30								effect stat_melee_damage=2 | effect stat_ranged_damage=1 | effect stat_hp_regeneration=-1	res://items/all/00_base_game/hedgehog/hedgehog_data.tres
+道具	头盔	Helmet	item_helmet	本体	0	15								effect stat_armor=1 | effect stat_speed=-2	res://items/all/00_base_game/helmet/helmet_data.tres
+道具	蜂蜜	Honey	item_honey	本体	2	70								effect stat_ranged_damage=3 | effect explosion_damage=10 | effect explosion_size=5 | effect stat_speed=-3 | effect stat_dodge=-3	res://items/all/00_base_game/honey/honey_data.tres
+道具	沙漏	Hourglass	item_hourglass	免费更新 New Dawn	3	100								effect item_hourglass=1 | effect hp_start_next_wave=-100	res://items/all/02_new_dawn/hourglass/hourglass_data.tres
+道具	狩猎战利品	Hunting Trophy	item_hunting_trophy	本体	2	55								effect gold_on_crit_kill→gold_on_crit_kill=33	res://items/all/00_base_game/hunting_trophy/hunting_trophy_data.tres
+道具	冰块	Ice Cube	item_ice_cube	本体	1	50								percent_damage stat_elemental_damage→enemy_percent_damage_taken=10	res://items/all/00_base_game/ice_cube/ice_cube_data.tres
+道具	改进工具	Improved Tools	item_improved_tools	本体	2	70								effect stat_attack_speed=10 | effect stat_attack_speed→structures_cooldown_reduction=50	res://items/all/00_base_game/improved_tools/improved_tools_data.tres
+道具	注射剂	Injection	item_injection	本体	0	20								effect stat_percent_damage=7 | effect stat_max_hp=-2	res://items/all/00_base_game/injection/injection_data.tres
+道具	精神异常	Insanity	item_insanity	本体	0	20								effect stat_crit_chance=6 | effect stat_percent_damage=-3	res://items/all/00_base_game/insanity/insanity_data.tres
+道具	果冻	Jelly	item_jelly	本体	0	15								effect stat_max_hp→unique_weapon_effects=1	res://items/all/00_base_game/jelly/jelly_data.tres
+道具	水母盾	Jellyshield	item_jellyshield	免费更新 Paws & Claws	2	50								effect jellyshield_count=1 | pet =0	res://items/all/03_paws_n_claws/jellyshield/jellyshield.tres
+道具	喷气背包	Jet Pack	item_jetpack	本体	3	100								effect stat_speed=15 | effect stat_dodge=10 | effect stat_max_hp=-5 | effect stat_armor=-1	res://items/all/00_base_game/jetpack/jetpack_data.tres
+道具	地雷	Landmines	item_landmines	本体	0	15								structure =1	res://items/all/00_base_game/landmines/landmines_data.tres
+道具	皮革背心	Leather Vest	item_leather_vest	本体	1	45								effect stat_armor=2 | effect stat_dodge=6 | effect stat_max_hp=-3	res://items/all/00_base_game/leather_vest/leather_vest_data.tres
+道具	柠檬水	Lemonade	item_lemonade	本体	0	15								effect consumable_heal=1	res://items/all/00_base_game/lemonade/lemonade_data.tres
+道具	镜片	Lens	item_lens	本体	0	20								effect stat_ranged_damage=1 | effect stat_range=-5	res://items/all/00_base_game/lens/lens_data.tres
+道具	小青蛙	Little Frog	item_little_frog	本体	1	45								effect pickup_range=20 | effect stat_harvesting=10 | effect stat_dodge=-3	res://items/all/00_base_game/little_frog/little_frog_data.tres
+道具	肌肉小子	Little Muscley Dude	item_little_muscley_dude	本体	1	50								effect stat_melee_damage=3 | effect stat_max_hp=5 | effect stat_range=-15	res://items/all/00_base_game/little_muscley_dude/little_muscley_dude_data.tres
+道具	搜刮虫虫	Lootworm	item_lootworm	免费更新 Paws & Claws	0	30								lootworm =1	res://items/all/03_paws_n_claws/lootworm/lootworm.tres
+道具	失落鸭鸭	Lost Duck	item_lost_duck	本体	0	25								effect stat_luck=8 | effect stat_elemental_damage=-1	res://items/all/00_base_game/lost_duck/lost_duck_data.tres
+道具	护身符	Lucky Charm	item_lucky_charm	本体	2	75								effect stat_luck=30 | effect stat_melee_damage=-2 | effect stat_ranged_damage=-1	res://items/all/00_base_game/lucky_charm/lucky_charm_data.tres
+道具	幸运硬币	Lucky Coin	item_lucky_coin	本体	3	105								gain_stat_for_every_stat stat_luck=2 | effect stat_armor=-2	res://items/all/00_base_game/lucky_coin/lucky_coin_data.tres
+道具	伐木工人衬衫	Lumberjack Shirt	item_lumberjack_shirt	本体	0	15								effect one_shot_trees=1	res://items/all/00_base_game/lumberjack_shirt/lumberjack_shirt_data.tres
+道具	鱼饵 	Lure	item_lure	本体	1	34								effect stat_hp_regeneration=2 | effect extra_loot_aliens_next_wave=2	res://items/all/00_base_game/lure/lure_data.tres
+道具	猛犸	Mammoth	item_mammoth	本体	3	110								effect stat_melee_damage=20 | effect stat_hp_regeneration=5 | effect knockback=5 | effect stat_percent_damage=-8 | effect stat_speed=-3	res://items/all/00_base_game/mammoth/mammoth_data.tres
+道具	精湛技艺	Mastery	item_mastery	本体	1	55								effect stat_melee_damage=6 | effect stat_ranged_damage=-3	res://items/all/00_base_game/mastery/mastery_data.tres
+道具	勋章	Medal	item_medal	本体	1	55								effect stat_max_hp=3 | effect stat_percent_damage=3 | effect stat_armor=1 | effect stat_speed=3 | effect stat_crit_chance=-4	res://items/all/00_base_game/medal/medal_data.tres
+道具	急救包	Medikit	item_medikit	本体	3	95								effect stat_hp_regeneration=10 | temp_stats_per_interval stat_hp_regeneration→temp_stats_per_interval=2 | effect stat_luck=-10	res://items/all/00_base_game/medikit/medikit_data.tres
+道具	金属探测器	Metal Detector	item_metal_detector	本体	1	40								effect chance_double_gold=5 | effect stat_luck=6 | effect stat_engineering=2 | effect stat_percent_damage=-5	res://items/all/00_base_game/metal_detector/metal_detector_data.tres
+道具	金属板	Metal Plate	item_metal_plate	本体	1	40								effect stat_armor=2 | effect stat_percent_damage=-3	res://items/all/00_base_game/metal_plate/metal_plate_data.tres
+道具	导弹	Missile	item_missile	本体	1	45								effect stat_percent_damage=10 | effect stat_attack_speed=-4	res://items/all/00_base_game/missile/missile_data.tres
+道具	老鼠	Mouse	item_mouse	本体	2	55								effect stat_lifesteal=5 | effect number_of_enemies=10 | effect stat_harvesting=-5	res://items/all/00_base_game/mouse/mouse_data.tres
+道具	蘑菇	Mushroom	item_mushroom	本体	0	25								effect stat_hp_regeneration=3 | effect stat_luck=-2	res://items/all/00_base_game/mushroom/mushroom_data.tres
+道具	异变	Mutation	item_mutation	本体	0	25								effect stat_ranged_damage=1 | effect stat_elemental_damage=1 | effect knockback=-3	res://items/all/00_base_game/mutation/mutation_data.tres
+道具	钉子	Nail	item_nail	本体	2	65								effect stat_engineering=5 | effect stat_engineering→weapon_scaling_stats=20 | effect stat_ranged_damage=-2	res://items/all/00_base_game/nail/nail_data.tres
+道具	夜视镜	Night Goggles	item_night_goggles	本体	3	95								effect stat_crit_chance=15 | effect stat_range=50 | effect stat_max_hp=-3 | effect stat_armor=-1	res://items/all/00_base_game/night_goggles/night_goggles_data.tres
+道具	章鱼	Octopus	item_octopus	本体	3	105								effect stat_max_hp=12 | effect stat_hp_regeneration=5 | effect stat_lifesteal=3 | effect stat_crit_chance=-8	res://items/all/00_base_game/octopus/octopus_data.tres
+道具	护垫	Padding	item_padding	本体	1	45								effect stat_max_hp=3 | gain_stat_for_every_stat stat_max_hp=1	res://items/all/00_base_game/padding/padding_data.tres
+道具	熊猫	Panda	item_panda	本体	3	100								effect stat_max_hp=12 | effect stat_luck=25 | effect stat_percent_damage=-5	res://items/all/00_base_game/panda/panda_data.tres
+道具	和平蜜蜂	Peaceful Bee	item_peaceful_bee	本体	0	18								effect stat_dodge=4 | effect stat_harvesting=4 | effect stat_melee_damage=-1 | effect stat_ranged_damage=-1	res://items/all/00_base_game/peaceful_bee/peaceful_bee_data.tres
+道具	孔雀	Peacock	item_peacock	本体	2	50								effect xp_gain=25 | effect xp_gain→stats_next_wave=100 | effect enemy_damage→stats_next_wave=50	res://items/all/00_base_game/peacock/peacock_data.tres
+道具	铅笔	Pencil	item_pencil	本体	0	8								effect stat_engineering=1	res://items/all/00_base_game/pencil/pencil_data.tres
+道具	猪猪存钱罐	Piggy Bank	item_piggy_bank	本体	1	40								effect gain_pct_gold_start_wave=20	res://items/all/00_base_game/piggy_bank/piggy_bank_data.tres
+道具	一堆书	Pile of Books	item_pile_of_books	本体	1	60								effect structures_can_crit=1 | effect stat_crit_chance=5 | effect stat_engineering=3	res://items/all/00_base_game/pile_of_books/pile_of_books_data.tres
+道具	植物	Plant	item_plant	本体	0	15								effect stat_hp_regeneration=3 | effect stat_lifesteal=-1	res://items/all/00_base_game/plant/plant_data.tres
+道具	塑性炸药	Plastic Explosive	item_plastic_explosive	本体	2	60								effect explosion_size=25	res://items/all/00_base_game/plastic_explosive/plastic_explosive_data.tres
+道具	口袋工厂	Pocket Factory	item_pocket_factory	本体	1	75								effect stat_engineering=2 | effect tree_turrets=1	res://items/all/00_base_game/pocket_factory/pocket_factory_data.tres
+道具	毒性补品	Poisonous Tonic	item_poisonous_tonic	本体	2	80								effect stat_attack_speed=10 | effect stat_crit_chance=5 | effect stat_range=15 | effect stat_hp_regeneration=-2	res://items/all/00_base_game/poisonous_tonic/poisonous_tonic_data.tres
+道具	土豆	Potato	item_potato	本体	3	95								effect stat_max_hp=3 | effect stat_hp_regeneration=2 | effect stat_lifesteal=1 | effect stat_percent_damage=5 | effect stat_attack_speed=5 | effect stat_speed=3 | effect stat_dodge=3 | effect stat_armor=1 | effect stat_luck=5	res://items/all/00_base_game/potato/potato_data.tres
+道具	再生药水	Regeneration Potion	item_potion	本体	3	90								double_value hp_regen_bonus=1/50 | effect stat_hp_regeneration=3	res://items/all/00_base_game/potion/potion_data.tres
+道具	发电机	Power Generator	item_power_generator	本体	2	65								gain_stat_for_every_stat stat_percent_damage=1 | effect stat_percent_damage=-5	res://items/all/00_base_game/power_generator/power_generator_data.tres
+道具	螺旋桨帽	Propeller Hat	item_propeller_hat	本体	0	28								effect stat_luck=10 | effect stat_percent_damage=-2	res://items/all/00_base_game/propeller_hat/propeller_hat_data.tres
+道具	南瓜	Pumpkin	item_pumpkin	本体	1	40								effect piercing_damage=15 | effect stat_percent_damage=-2	res://items/all/00_base_game/pumpkin/pumpkin_data.tres
+道具	鼠斯拉	Ratzilla	item_ratzilla	免费更新 Paws & Claws	0	30								ratzilla =1	res://items/all/03_paws_n_claws/ratzilla/ratzilla.tres
+道具	回收装置	Recycling Machine	item_recycling_machine	本体	1	35								effect recycling_gains=35	res://items/all/00_base_game/recycling_machine/recycling_machine_data.tres
+道具	强化钢	Reinforced Steel	item_reinforced_steel	本体	1	50								effect stat_ranged_damage=2 | effect stat_engineering=3 | effect stat_speed=-3	res://items/all/00_base_game/reinforced_steel/reinforced_steel_data.tres
+道具	Retromation的连帽衫	Retromation’s Hoodie	item_retromations_hoodie	本体	3	110								gain_stat_for_every_stat stat_attack_speed=2 | effect stat_range=-80	res://items/all/00_base_game/retromations_hoodie/retromations_hoodie_data.tres
+道具	跳弹	Ricochet	item_ricochet	本体	3	110								effect bounce=1 | effect stat_percent_damage=-25	res://items/all/00_base_game/ricochet/ricochet_data.tres
+道具	狂怒	Rip and Tear	item_rip_and_tear	本体	2	65								item_exploding explode_on_death=1 | effect stat_crit_chance=-5	res://items/all/00_base_game/rip_and_tear/rip_and_tear_data.tres
+道具	反击	Riposte	item_riposte	本体	1	40								effect stat_melee_damage=2 | chance_stat_damage stat_melee_damage→dmg_on_dodge=300	res://items/all/00_base_game/riposte/riposte_data.tres
+道具	仪式	Ritual	item_ritual	本体	1	60								effect stat_percent_damage=6 | effect stat_lifesteal=2 | effect stat_engineering=-2	res://items/all/00_base_game/ritual/ritual_data.tres
+道具	机械臂	Robot Arm	item_robot_arm	本体	3	100								effect stat_melee_damage→stats_end_of_wave=3 | effect stat_engineering→stats_end_of_wave=3 | effect stat_max_hp→stats_end_of_wave=-1	res://items/all/00_base_game/robot_arm/robot_arm_data.tres
+道具	悲伤的番茄	Sad Tomato	item_sad_tomato	本体	2	50								effect stat_hp_regeneration=8 | effect hp_start_wave=-50	res://items/all/00_base_game/sad_tomato/sad_tomato_data.tres
+道具	替罪羔羊	Scapegoat	item_scapegoat	免费更新 Paws & Claws	3	110								scapegoat =1	res://items/all/03_paws_n_claws/scapegoat/scapegoat.tres
+道具	疤痕	Scar	item_scar	本体	0	25								effect xp_gain=20 | effect stat_range=-8	res://items/all/00_base_game/scar/scar_data.tres
+道具	害怕的香肠	Scared Sausage	item_scared_sausage	本体	0	25								burn_chance burn_chance=0	res://items/all/00_base_game/scared_sausage/scared_sausage_data.tres
+道具	瞄准镜	Scope	item_scope	本体	1	48								effect stat_ranged_damage=2 | effect stat_range=25 | effect stat_attack_speed=-7	res://items/all/00_base_game/scope/scope_data.tres
+道具	镣铐	Shackles	item_shackles	本体	2	80								effect stat_hp_regeneration=8 | effect stat_engineering=8 | effect stat_range=80 | stat_cap speed_cap=0	res://items/all/00_base_game/shackles/shackles_data.tres
+道具	阴影药水	Shady Potion	item_shady_potion	本体	1	48								effect stat_luck=20 | effect stat_hp_regeneration=-2	res://items/all/00_base_game/shady_potion/shady_potion_data.tres
+道具	尖头子弹	Sharp Bullet	item_sharp_bullet	本体	0	25								effect piercing=1 | effect piercing_damage=-20 | effect stat_percent_damage=-5 | effect knockback=-3	res://items/all/00_base_game/sharp_bullet/sharp_bullet_data.tres
+道具	休穆糖	Shmoop	item_shmoop	本体	2	60								effect stat_max_hp=6 | effect stat_hp_regeneration=2 | effect stat_melee_damage=-2 | effect stat_ranged_damage=-1	res://items/all/00_base_game/shmoop/shmoop_data.tres
+道具	Sifd的圣物	Sifd’s Relic	item_sifds_relic	本体	3	100								effect stat_armor=3 | effect instant_gold_attracting=100	res://items/all/00_base_game/sifds_relic/sifds_relic_data.tres
+道具	银质子弹	Silver Bullet	item_silver_bullet	本体	2	70								effect damage_against_bosses=25	res://items/all/00_base_game/silver_bullet/silver_bullet_data.tres
+道具	小型弹匣	Small Magazine	item_small_magazine	本体	1	60								effect stat_ranged_damage=2 | effect stat_attack_speed=10 | effect stat_percent_damage=-6	res://items/all/00_base_game/small_magazine/small_magazine_data.tres
+道具	蜗牛	Snail	item_snail	本体	1	40								effect enemy_speed=-8 | effect stat_speed=-3	res://items/all/00_base_game/snail/snail_data.tres
+道具	蛇	Snake	item_snake	本体	0	25								effect burning_spread=1 | effect stat_max_hp=-1	res://items/all/00_base_game/snake/snake_data.tres
+道具	雪球	Snowball	item_snowball	本体	1	50								double_key_value stat_elemental_damage→gain_stat_for_equipped_item_with_stat=1/0	res://items/all/00_base_game/snowball/snowball_data.tres
+道具	辣酱	Spicy Sauce	item_spicy_sauce	本体	1	40								effect stat_max_hp=3 | item_exploding explode_on_consumable=1	res://items/all/00_base_game/spicy_sauce/spicy_sauce_data.tres
+道具	蜘蛛	Spider	item_spider	本体	3	110								effect stat_percent_damage=12 | effect stat_attack_speed→unique_weapon_effects=6 | effect stat_dodge=-3 | effect stat_harvesting=-5	res://items/all/00_base_game/spider/spider_data.tres
+道具	雕像	Statue	item_statue	本体	2	60								effect stat_attack_speed→temp_stats_while_not_moving=40 | effect stat_speed=-10	res://items/all/00_base_game/statue/statue_data.tres
+道具	石头皮肤	Stone Skin	item_stone_skin	本体	2	85								gain_stat_for_every_stat stat_max_hp=1 | effect stat_attack_speed=-6	res://items/all/00_base_game/stone_skin/stone_skin_data.tres
+道具	奇怪之书	Strange Book	item_strange_book	本体	2	70								gain_stat_for_every_stat stat_engineering=1 | effect stat_melee_damage=-1 | effect stat_ranged_damage=-1	res://items/all/00_base_game/strange_book/strange_book_data.tres
+道具	墨镜	Sunglasses	item_sunglasses	本体	1	50								effect stat_crit_chance=10 | effect stat_armor=-1	res://items/all/00_base_game/sunglasses/sunglasses_data.tres
+道具	水熊虫	Tardigrade	item_tardigrade	本体	2	50								effect hit_protection=1	res://items/all/00_base_game/tardigrade/tardigrade_data.tres
+道具	触手	Tentacle	item_tentacle	本体	1	35								effect stat_crit_chance=3 | effect heal_on_crit_kill=20	res://items/all/00_base_game/tentacle/tentacle_data.tres
+道具	惊恐的洋葱	Terrified Onion	item_terrified_onion	本体	0	15								effect stat_speed=4 | effect stat_luck=-5	res://items/all/00_base_game/terrified_onion/terrified_onion_data.tres
+道具	工具箱	Toolbox	item_toolbox	本体	2	55								effect stat_engineering=6 | effect stat_attack_speed=-8	res://items/all/00_base_game/toolbox/toolbox_data.tres
+道具	拷问	Torture	item_torture	本体	3	100								effect stat_max_hp=15 | effect torture=5	res://items/all/00_base_game/torture/torture_data.tres
+道具	毒污泥	Toxic Sludge	item_toxic_sludge	本体	0	20								effect stat_elemental_damage=2 | effect stat_dodge=-2	res://items/all/00_base_game/toxic_sludge/toxic_sludge_data.tres
+道具	拖拉机	Tractor	item_tractor	本体	2	70								effect stat_harvesting=40 | effect stat_percent_damage=-8	res://items/all/00_base_game/tractor/tractor_data.tres
+道具	树木	Tree	item_tree	本体	0	15								effect trees=1	res://items/all/00_base_game/tree/tree_data.tres
+道具	三角之力	Triangle of Power	item_triangle_of_power	本体	2	65								effect stat_percent_damage=20 | effect stat_armor=1 | effect stat_percent_damage→temp_stats_on_hit=-2	res://items/all/00_base_game/triangle_of_power/triangle_of_power_data.tres
+道具	炮塔	Turret	item_turret	本体	0	15								turret =1	res://items/all/00_base_game/turret/turret_data.tres
+道具	燃烧炮塔	Incendiary Turret	item_turret_flame	本体	1	40								turret =1	res://items/all/00_base_game/turret_flame/turret_flame_data.tres
+道具	医疗炮塔	Medical Turret	item_turret_healing	本体	1	40								turret =1	res://items/all/00_base_game/turret_healing/turret_healing_data.tres
+道具	激光炮塔	Laser Turret	item_turret_laser	本体	2	65								turret =1	res://items/all/00_base_game/turret_laser/turret_laser_data.tres
+道具	爆炸炮塔	Explosive Turret	item_turret_rocket	本体	3	80								turret =1	res://items/all/00_base_game/turret_rocket/turret_rocket_data.tres
+道具	泰勒	Tyler	item_tyler	本体	1	62								turret =1	res://items/all/00_base_game/tyler/tyler_data.tres
+道具	丑牙	Ugly Tooth	item_ugly_tooth	本体	0	25								double_value remove_speed=5/20 | effect stat_speed=-3	res://items/all/00_base_game/ugly_tooth/ugly_tooth_data.tres
+道具	义警戒指	Vigilante Ring	item_vigilante_ring	本体	2	92								effect stat_percent_damage→stats_end_of_wave=3	res://items/all/00_base_game/vigilante_ring/vigilante_ring_data.tres
+道具	流浪机器人	Wandering Bot	item_wandering_bot	本体	2	60								turret wandering_bot=1	res://items/all/00_base_game/wandering_bot/wandering_bot_data.tres
+道具	士兵头盔	Warrior Helmet	item_warrior_helmet	本体	2	80								effect stat_armor=3 | effect stat_max_hp=5 | effect stat_speed=-5	res://items/all/00_base_game/warrior_helmet/warrior_helmet_data.tres
+道具	奇怪的食物	Weird Food	item_weird_food	本体	0	20								effect consumable_heal=2 | effect stat_dodge=-2	res://items/all/00_base_game/weird_food/weird_food_data.tres
+道具	奇怪的幽灵	Weird Ghost	item_weird_ghost	本体	0	12								effect stat_max_hp=3 | effect hp_start_next_wave=-100	res://items/all/00_base_game/weird_ghost/weird_ghost_data.tres
+道具	小麦	Wheat	item_wheat	本体	2	85								effect stat_melee_damage=4 | effect stat_ranged_damage=2 | effect stat_harvesting=10 | effect stat_elemental_damage=-2	res://items/all/00_base_game/wheat/wheat_data.tres
+道具	独轮车	Wheelbarrow	item_wheelbarrow	本体	1	40								effect stat_harvesting=16 | effect stat_armor=-1	res://items/all/00_base_game/wheelbarrow/wheelbarrow_data.tres
+道具	磨刀石	Whetstone	item_whetstone	本体	1	40								effect stat_lifesteal=4 | effect knockback=-3	res://items/all/00_base_game/whetstone/whetstone_data.tres
+道具	白旗	White Flag	item_white_flag	本体	1	40								effect stat_harvesting=5 | effect number_of_enemies=-5	res://items/all/00_base_game/white_flag/white_flag_data.tres
+道具	鬼火	Will-o’-Wisp	item_will_o_the_wisp	免费更新 New Dawn	2	80								gain_stat_for_kill_enemies_while_burning stat_elemental_damage→gain_stat_for_killed_enemies_while_burning=30/1 | effect stat_attack_speed=-7	res://items/all/02_new_dawn/will_o_the_wisp/will_o_the_wisp_data.tres
+道具	翅膀	Wings	item_wings	本体	2	85								effect stat_speed=10 | effect stat_range=30 | effect stat_elemental_damage=-2	res://items/all/00_base_game/wings/wings_data.tres
+道具	智慧	Wisdom	item_wisdom	本体	2	85								temp_stats_per_interval stat_percent_damage→temp_stats_per_interval=5 | effect stat_percent_damage=-15	res://items/all/00_base_game/wisdom/wisdom_data.tres
+道具	野狼头盔	Wolf Helmet	item_wolf_helmet	本体	3	90								effect stat_elemental_damage=10 | effect stat_luck=20 | effect stat_engineering=-5	res://items/all/00_base_game/wolf_helmet/wolf_helmet_data.tres
+套装	利器	Blade	set_blade	本体共用											res://items/sets/blade/blade_set_data.tres
+套装	钝器	Blunt	set_blunt	本体共用											res://items/sets/blunt/blunt_set_data.tres
+套装	元素	Elemental	set_elemental	本体共用											res://items/sets/fire/fire_set_data.tres
+套装	虚灵	Ethereal	set_ethereal	本体共用											res://items/sets/ethereal/ethereal_set_data.tres
+套装	爆炸	Explosive	set_explosive	本体共用											res://items/sets/explosive/explosive_set_data.tres
+套装	枪械	Gun	set_gun	本体共用											res://items/sets/gun/gun_set_data.tres
+套装	重型	Heavy	set_heavy	本体共用											res://items/sets/heavy/heavy_set_data.tres
+套装	传奇	Legendary	set_legendary	本体共用											res://items/sets/legendary/legendary_set_data.tres
+套装	医疗	Medical	set_medical	本体共用											res://items/sets/medical/medical_set_data.tres
+套装	中世纪	Medieval	set_medieval	本体共用											res://items/sets/medieval/medieval_set_data.tres
+套装	精准	Precise	set_precise	本体共用											res://items/sets/precise/precise_set_data.tres
+套装	原始	Primitive	set_primitive	本体共用											res://items/sets/primitive/primitive_set_data.tres
+套装	辅助	Support	set_support	本体共用											res://items/sets/support/support_set_data.tres
+套装	工具	Tool	set_tool	本体共用											res://items/sets/tool/tool_set_data.tres
+套装	徒手	Unarmed	set_unarmed	本体共用											res://items/sets/unarmed/unarmed_set_data.tres
+属性	%爆炸伤害	% Explosion Damage	explosion_damage	本体											res://items/upgrades/stat_explosion_damage.tres
+属性	护甲	Armor	stat_armor	本体											res://items/upgrades/armor/stat_armor.tres
+属性	%攻击速度	% Attack Speed	stat_attack_speed	本体											res://items/upgrades/attack_speed/stat_attack_speed.tres
+属性	%暴击率	% Crit Chance	stat_crit_chance	本体											res://items/upgrades/crit_chance/stat_crit_chance.tres
+属性	%闪避	% Dodge	stat_dodge	本体											res://items/upgrades/dodge/stat_dodge.tres
+属性	元素伤害	Elemental Damage	stat_elemental_damage	本体											res://items/upgrades/elemental_damage/stat_elemental_damage.tres
+属性	工程学	Engineering	stat_engineering	本体											res://items/upgrades/engineering/stat_engineering.tres
+属性	收获	Harvesting	stat_harvesting	本体											res://items/upgrades/harvesting/stat_harvesting.tres
+属性	生命再生	HP Regeneration	stat_hp_regeneration	本体											res://items/upgrades/health_regeneration/stat_hp_regeneration.tres
+属性	STAT_LEVELS	STAT_LEVELS	stat_levels	本体											res://items/upgrades/stat_levels.tres
+属性	%生命窃取	% Life Steal	stat_lifesteal	本体											res://items/upgrades/lifesteal/stat_lifesteal.tres
+属性	幸运	Luck	stat_luck	本体											res://items/upgrades/luck/stat_luck.tres
+属性	STAT_MATERIALS	STAT_MATERIALS	stat_materials	本体											res://items/upgrades/stat_materials.tres
+属性	最大生命值	Max HP	stat_max_hp	本体											res://items/upgrades/health/stat_max_hp.tres
+属性	近战伤害	Melee Damage	stat_melee_damage	本体											res://items/upgrades/melee_damage/stat_melee_damage.tres
+属性	%伤害	% Damage	stat_percent_damage	本体											res://items/upgrades/percent_damage/stat_percent_damage.tres
+属性	范围	Range	stat_range	本体											res://items/upgrades/range/stat_range.tres
+属性	远程伤害	Ranged Damage	stat_ranged_damage	本体											res://items/upgrades/ranged_damage/stat_ranged_damage.tres
+属性	%速度	% Speed	stat_speed	本体											res://items/upgrades/speed/stat_speed.tres
+属性	STAT_STRUCTURE_PERCENT_DAMAGE	STAT_STRUCTURE_PERCENT_DAMAGE	stat_structure_percent_damage	本体											res://items/upgrades/stat_structure_percent_damage.tres
+属性	STAT_STRUCTURE_RANGE	STAT_STRUCTURE_RANGE	stat_structure_range	本体											res://items/upgrades/stat_structure_range.tres
+属性	获得%经验	% XP Gain	xp_gain	本体											res://items/upgrades/stat_xp_gain.tres
+升级选项	胸	Chest	upgrade_armor_1	本体共用	0	1								effect stat_armor=1	res://items/upgrades/armor/1/armor_data.tres
+升级选项	胸 II	Chest II	upgrade_armor_2	本体共用	1	1								effect stat_armor=2	res://items/upgrades/armor/2/armor_2_data.tres
+升级选项	胸 III	Chest III	upgrade_armor_3	本体共用	2	1								effect stat_armor=3	res://items/upgrades/armor/3/armor_3_data.tres
+升级选项	胸 IV	Chest IV	upgrade_armor_4	本体共用	3	1								effect stat_armor=4	res://items/upgrades/armor/4/armor_4_data.tres
+升级选项	反应能力	Reflexes	upgrade_attack_speed_1	本体共用	0	1								effect stat_attack_speed=5	res://items/upgrades/attack_speed/1/attack_speed_data.tres
+升级选项	反应能力 II	Reflexes II	upgrade_attack_speed_2	本体共用	1	1								effect stat_attack_speed=10	res://items/upgrades/attack_speed/2/attack_speed_2_data.tres
+升级选项	反应能力 III	Reflexes III	upgrade_attack_speed_3	本体共用	2	1								effect stat_attack_speed=15	res://items/upgrades/attack_speed/3/attack_speed_3_data.tres
+升级选项	反应能力 IV	Reflexes IV	upgrade_attack_speed_4	本体共用	3	1								effect stat_attack_speed=20	res://items/upgrades/attack_speed/4/attack_speed_4_data.tres
+升级选项	手指	Fingers	upgrade_crit_chance_1	本体共用	0	1								effect stat_crit_chance=3	res://items/upgrades/crit_chance/1/crit_chance_data.tres
+升级选项	手指 II	Fingers II	upgrade_crit_chance_2	本体共用	1	1								effect stat_crit_chance=5	res://items/upgrades/crit_chance/2/crit_chance_2_data.tres
+升级选项	手指 III	Fingers III	upgrade_crit_chance_3	本体共用	2	1								effect stat_crit_chance=7	res://items/upgrades/crit_chance/3/crit_chance_3_data.tres
+升级选项	手指 IV	Fingers IV	upgrade_crit_chance_4	本体共用	3	1								effect stat_crit_chance=9	res://items/upgrades/crit_chance/4/crit_chance_4_data.tres
+升级选项	背	Back	upgrade_dodge_1	本体共用	0	1								effect stat_dodge=3	res://items/upgrades/dodge/1/dodge_data.tres
+升级选项	背 II	Back II	upgrade_dodge_2	本体共用	1	1								effect stat_dodge=6	res://items/upgrades/dodge/2/dodge_2_data.tres
+升级选项	背 III	Back III	upgrade_dodge_3	本体共用	2	1								effect stat_dodge=9	res://items/upgrades/dodge/3/dodge_3_data.tres
+升级选项	背 IV	Back IV	upgrade_dodge_4	本体共用	3	1								effect stat_dodge=12	res://items/upgrades/dodge/4/dodge_4_data.tres
+升级选项	脑	Brain	upgrade_elemental_damage_1	本体共用	0	1								effect stat_elemental_damage=1	res://items/upgrades/elemental_damage/1/elemental_damage_data.tres
+升级选项	脑 II	Brain II	upgrade_elemental_damage_2	本体共用	1	1								effect stat_elemental_damage=2	res://items/upgrades/elemental_damage/2/elemental_damage_2_data.tres
+升级选项	脑 III	Brain III	upgrade_elemental_damage_3	本体共用	2	1								effect stat_elemental_damage=3	res://items/upgrades/elemental_damage/3/elemental_damage_3_data.tres
+升级选项	脑 IV	Brain IV	upgrade_elemental_damage_4	本体共用	3	1								effect stat_elemental_damage=4	res://items/upgrades/elemental_damage/4/elemental_damage_4_data.tres
+升级选项	头骨	Skull	upgrade_engineering_1	本体共用	0	1								effect stat_engineering=2	res://items/upgrades/engineering/1/engineering_data.tres
+升级选项	头骨 II	Skull II	upgrade_engineering_2	本体共用	1	1								effect stat_engineering=3	res://items/upgrades/engineering/2/engineering_2_data.tres
+升级选项	头骨 III	Skull III	upgrade_engineering_3	本体共用	2	1								effect stat_engineering=4	res://items/upgrades/engineering/3/engineering_3_data.tres
+升级选项	头骨 IV	Skull IV	upgrade_engineering_4	本体共用	3	1								effect stat_engineering=5	res://items/upgrades/engineering/4/engineering_4_data.tres
+升级选项	手	Hands	upgrade_harvesting_1	本体共用	0	1								effect stat_harvesting=5	res://items/upgrades/harvesting/1/harvesting_data.tres
+升级选项	手 II	Hands II	upgrade_harvesting_2	本体共用	1	1								effect stat_harvesting=8	res://items/upgrades/harvesting/2/harvesting_2_data.tres
+升级选项	手 III	Hands III	upgrade_harvesting_3	本体共用	2	1								effect stat_harvesting=10	res://items/upgrades/harvesting/3/harvesting_3_data.tres
+升级选项	手 IV	Hands IV	upgrade_harvesting_4	本体共用	3	1								effect stat_harvesting=12	res://items/upgrades/harvesting/4/harvesting_4_data.tres
+升级选项	肺	Lungs	upgrade_hp_regeneration_1	本体共用	0	1								effect stat_hp_regeneration=2	res://items/upgrades/health_regeneration/1/health_regeneration_data.tres
+升级选项	肺 II	Lungs II	upgrade_hp_regeneration_2	本体共用	1	1								effect stat_hp_regeneration=3	res://items/upgrades/health_regeneration/2/health_regeneration_2_data.tres
+升级选项	肺 III	Lungs III	upgrade_hp_regeneration_3	本体共用	2	1								effect stat_hp_regeneration=4	res://items/upgrades/health_regeneration/3/health_regeneration_3_data.tres
+升级选项	肺 IV	Lungs IV	upgrade_hp_regeneration_4	本体共用	3	1								effect stat_hp_regeneration=5	res://items/upgrades/health_regeneration/4/health_regeneration_4_data.tres
+升级选项	牙齿	Teeth	upgrade_lifesteal_1	本体共用	0	1								effect stat_lifesteal=1	res://items/upgrades/lifesteal/1/lifesteal_data.tres
+升级选项	牙齿 II	Teeth II	upgrade_lifesteal_2	本体共用	1	1								effect stat_lifesteal=2	res://items/upgrades/lifesteal/2/lifesteal_2_data.tres
+升级选项	牙齿 III	Teeth III	upgrade_lifesteal_3	本体共用	2	1								effect stat_lifesteal=3	res://items/upgrades/lifesteal/3/lifesteal_3_data.tres
+升级选项	牙齿 IV	Teeth IV	upgrade_lifesteal_4	本体共用	3	1								effect stat_lifesteal=4	res://items/upgrades/lifesteal/4/lifesteal_4_data.tres
+升级选项	鼻子	Nose	upgrade_luck_1	本体共用	0	1								effect stat_luck=5	res://items/upgrades/luck/1/luck_data.tres
+升级选项	鼻子 II	Nose II	upgrade_luck_2	本体共用	1	1								effect stat_luck=10	res://items/upgrades/luck/2/luck_2_data.tres
+升级选项	鼻子 III	Nose III	upgrade_luck_3	本体共用	2	1								effect stat_luck=15	res://items/upgrades/luck/3/luck_3_data.tres
+升级选项	鼻子 IV	Nose IV	upgrade_luck_4	本体共用	3	1								effect stat_luck=20	res://items/upgrades/luck/4/luck_4_data.tres
+升级选项	心脏	Heart	upgrade_max_hp_1	本体共用	0	1								effect stat_max_hp=3	res://items/upgrades/health/1/health_data.tres
+升级选项	心脏 II	Heart II	upgrade_max_hp_2	本体共用	1	1								effect stat_max_hp=6	res://items/upgrades/health/2/health_2_data.tres
+升级选项	心脏 III	Heart III	upgrade_max_hp_3	本体共用	2	1								effect stat_max_hp=9	res://items/upgrades/health/3/health_3_data.tres
+升级选项	心脏 IV	Heart IV	upgrade_max_hp_4	本体共用	3	1								effect stat_max_hp=12	res://items/upgrades/health/4/health_4_data.tres
+升级选项	前臂	Forearms	upgrade_melee_damage_1	本体共用	0	1								effect stat_melee_damage=2	res://items/upgrades/melee_damage/1/melee_damage_data.tres
+升级选项	前臂 II	Forearms II	upgrade_melee_damage_2	本体共用	1	1								effect stat_melee_damage=4	res://items/upgrades/melee_damage/2/melee_damage_2_data.tres
+升级选项	前臂 III	Forearms III	upgrade_melee_damage_3	本体共用	2	5								effect stat_melee_damage=6	res://items/upgrades/melee_damage/3/melee_damage_3_data.tres
+升级选项	前臂 IV	Forearms IV	upgrade_melee_damage_4	本体共用	3	1								effect stat_melee_damage=8	res://items/upgrades/melee_damage/4/melee_damage_4_data.tres
+升级选项	三头肌	Triceps	upgrade_percent_damage_1	本体共用	0	1								effect stat_percent_damage=5	res://items/upgrades/percent_damage/1/percent_damage_data.tres
+升级选项	三头肌 II	Triceps II	upgrade_percent_damage_2	本体共用	1	1								effect stat_percent_damage=8	res://items/upgrades/percent_damage/2/percent_damage_2_data.tres
+升级选项	三头肌 III	Triceps III	upgrade_percent_damage_3	本体共用	2	1								effect stat_percent_damage=12	res://items/upgrades/percent_damage/3/percent_damage_3_data.tres
+升级选项	三头肌 IV	Triceps IV	upgrade_percent_damage_4	本体共用	3	1								effect stat_percent_damage=16	res://items/upgrades/percent_damage/4/percent_damage_4_data.tres
+升级选项	眼睛	Eyes	upgrade_range_1	本体共用	0	1								effect stat_range=15	res://items/upgrades/range/1/range_data.tres
+升级选项	眼睛 II	Eyes II	upgrade_range_2	本体共用	1	1								effect stat_range=30	res://items/upgrades/range/2/range_2_data.tres
+升级选项	眼睛 III	Eyes III	upgrade_range_3	本体共用	2	1								effect stat_range=45	res://items/upgrades/range/3/range_3_data.tres
+升级选项	眼睛 IV	Eyes IV	upgrade_range_4	本体共用	3	1								effect stat_range=60	res://items/upgrades/range/4/range_4_data.tres
+升级选项	肩膀	Shoulders	upgrade_ranged_damage_1	本体共用	0	1								effect stat_ranged_damage=1	res://items/upgrades/ranged_damage/1/ranged_damage_data.tres
+升级选项	肩膀 II	Shoulders II	upgrade_ranged_damage_2	本体共用	1	1								effect stat_ranged_damage=2	res://items/upgrades/ranged_damage/2/ranged_damage_2_data.tres
+升级选项	肩膀 III	Shoulders III	upgrade_ranged_damage_3	本体共用	2	1								effect stat_ranged_damage=3	res://items/upgrades/ranged_damage/3/ranged_damage_3_data.tres
+升级选项	肩膀 IV	Shoulders IV	upgrade_ranged_damage_4	本体共用	3	1								effect stat_ranged_damage=4	res://items/upgrades/ranged_damage/4/ranged_damage_4_data.tres
+升级选项	腿	Legs	upgrade_speed_1	本体共用	0	1								effect stat_speed=3	res://items/upgrades/speed/1/speed_data.tres
+升级选项	腿 II	Legs II	upgrade_speed_2	本体共用	1	1								effect stat_speed=6	res://items/upgrades/speed/2/speed_2_data.tres
+升级选项	腿 III	Legs III	upgrade_speed_3	本体共用	2	1								effect stat_speed=9	res://items/upgrades/speed/3/speed_3_data.tres
+升级选项	腿 IV	Legs IV	upgrade_speed_4	本体共用	3	1								effect stat_speed=12	res://items/upgrades/speed/4/speed_4_data.tres
+升级选项	武器栏	Weapon Slot	upgrade_weapon_slot	本体共用	0	1								effect weapon_slot=1	res://items/upgrades/weapon_slot/weapon_slot_data.tres
+武器档位	刺棍	Cacti Club	weapon_cacti_club_1	本体	0	20	近战	15	63	stat_melee_damage×0.8	0.03	2	set_primitive | set_heavy	weapon_projectiles_on_hit effect_projectiles_on_hit=3	res://weapons/melee/cactus_mace/1/cactus_mace_data.tres
+武器档位	刺棍 II	Cacti Club II	weapon_cacti_club_2	本体	1	39	近战	20	58	stat_melee_damage×0.85	0.03	2	set_primitive | set_heavy	weapon_projectiles_on_hit effect_projectiles_on_hit=4	res://weapons/melee/cactus_mace/2/cactus_mace_2_data.tres
+武器档位	刺棍 III	Cacti Club III	weapon_cacti_club_3	本体	2	74	近战	35	54	stat_melee_damage×0.9	0.03	2	set_primitive | set_heavy	weapon_projectiles_on_hit effect_projectiles_on_hit=5	res://weapons/melee/cactus_mace/3/cactus_mace_3_data.tres
+武器档位	刺棍 IV	Cacti Club IV	weapon_cacti_club_4	本体	3	149	近战	60	45	stat_melee_damage×1	0.03	2	set_primitive | set_heavy	weapon_projectiles_on_hit effect_projectiles_on_hit=6	res://weapons/melee/cactus_mace/4/cactus_mace_4_data.tres
+武器档位	链枪 IV	Chain Gun IV	weapon_chain_gun_4	本体	3	300	远程	2	2	stat_ranged_damage×1 + stat_engineering×1	0.03	1.5	set_legendary | set_gun		res://weapons/ranged/chain_gun/4/chain_gun_4_data.tres
+武器档位	砍刀	Chopper	weapon_chopper_1	本体	0	15	近战	6	27	stat_melee_damage×0.5 + stat_max_hp×0.15	0.1	2	set_blade	effect consumable_heal=1	res://weapons/melee/chopper/1/chopper_data.tres
+武器档位	砍刀 II	Chopper II	weapon_chopper_2	本体	1	31	近战	12	25	stat_melee_damage×0.5 + stat_max_hp×0.2	0.15	2	set_blade	effect consumable_heal=1	res://weapons/melee/chopper/2/chopper_2_data.tres
+武器档位	砍刀 III	Chopper III	weapon_chopper_3	本体	2	61	近战	18	23	stat_melee_damage×0.5 + stat_max_hp×0.25	0.2	2	set_blade	effect consumable_heal=1	res://weapons/melee/chopper/3/chopper_3_data.tres
+武器档位	砍刀 IV	Chopper IV	weapon_chopper_4	本体	3	122	近战	30	18	stat_melee_damage×0.5 + stat_max_hp×0.3	0.25	2	set_blade	effect consumable_heal=2	res://weapons/melee/chopper/4/chopper_4_data.tres
+武器档位	圆锯 II	Circular Saw II	weapon_circular_saw_2	本体	1	46	近战	10	8	stat_melee_damage×1	0.05	2	set_blade | set_medical		res://weapons/melee/circular_saw/2/circular_saw_2_data.tres
+武器档位	圆锯 III	Circular Saw III	weapon_circular_saw_3	本体	2	86	近战	15	5	stat_melee_damage×1	0.1	2	set_blade | set_medical		res://weapons/melee/circular_saw/3/circular_saw_3_data.tres
+武器档位	圆锯 IV	Circular Saw IV	weapon_circular_saw_4	本体	3	173	近战	25	2	stat_melee_damage×1	0.2	2	set_blade | set_medical		res://weapons/melee/circular_saw/4/circular_saw_4_data.tres
+武器档位	利爪	Claw	weapon_claw_1	本体	0	15	近战	5	13	stat_attack_speed×0.15 + stat_melee_damage×0.5	0.1	2	set_unarmed | set_precise		res://weapons/melee/claw/1/claw_data.tres
+武器档位	利爪 II	Claw II	weapon_claw_2	本体	1	28	近战	10	11	stat_attack_speed×0.2 + stat_melee_damage×0.5	0.15	2.15	set_unarmed | set_precise		res://weapons/melee/claw/2/claw_2_data.tres
+武器档位	利爪 III	Claw III	weapon_claw_3	本体	2	55	近战	15	8	stat_attack_speed×0.25 + stat_melee_damage×0.5	0.2	2.3	set_unarmed | set_precise		res://weapons/melee/claw/3/claw_3_data.tres
+武器档位	利爪 IV	Claw IV	weapon_claw_4	本体	3	110	近战	25	3	stat_attack_speed×0.3 + stat_melee_damage×0.5	0.25	2.5	set_unarmed | set_precise		res://weapons/melee/claw/4/claw_4_data.tres
+武器档位	十字弓	Crossbow	weapon_crossbow_1	本体	0	16	远程	10	50	stat_ranged_damage×0.5 + stat_range×0.1	0.3	1.5	set_precise | set_medieval	weapon_null pierce_on_crit=1	res://weapons/ranged/crossbow/1/crossbow_data.tres
+武器档位	十字弓 II	Crossbow II	weapon_crossbow_2	本体	1	34	远程	12	50	stat_ranged_damage×0.5 + stat_range×0.1	0.35	1.75	set_precise | set_medieval	weapon_null pierce_on_crit=2	res://weapons/ranged/crossbow/2/crossbow_data_2.tres
+武器档位	十字弓 III	Crossbow III	weapon_crossbow_3	本体	2	62	远程	15	50	stat_ranged_damage×0.5 + stat_range×0.1	0.4	2	set_precise | set_medieval	weapon_null pierce_on_crit=3	res://weapons/ranged/crossbow/3/crossbow_data_3.tres
+武器档位	十字弓 IV	Crossbow IV	weapon_crossbow_4	本体	3	132	远程	18	50	stat_ranged_damage×0.5 + stat_range×0.1	0.45	2.25	set_precise | set_medieval	weapon_null pierce_on_crit=4	res://weapons/ranged/crossbow/4/crossbow_data_4.tres
+武器档位	盗贼匕首	Thief Dagger	weapon_dagger_1	本体	0	12	近战	6	27	stat_melee_damage×0.5	0.2	2	set_precise	weapon_null gold_on_crit_kill=50	res://weapons/melee/dagger/1/dagger_data.tres
+武器档位	盗贼匕首 II	Thief Dagger II	weapon_dagger_2	本体	1	26	近战	12	22	stat_melee_damage×0.5	0.25	2	set_precise	weapon_null gold_on_crit_kill=56	res://weapons/melee/dagger/2/dagger_2_data.tres
+武器档位	盗贼匕首 III	Thief Dagger III	weapon_dagger_3	本体	2	52	近战	18	18	stat_melee_damage×0.5	0.3	2	set_precise	weapon_null gold_on_crit_kill=62	res://weapons/melee/dagger/3/dagger_3_data.tres
+武器档位	盗贼匕首 IV	Thief Dagger IV	weapon_dagger_4	本体	3	105	近战	30	10	stat_melee_damage×0.5	0.4	2	set_precise	weapon_null gold_on_crit_kill=80	res://weapons/melee/dagger/4/dagger_4_data.tres
+武器档位	DEX终结者 IV	DEX-troyer IV	weapon_dextroyer_4	本体	3	315	近战	100	30	stat_melee_damage×1 + stat_engineering×1	0.03	2	set_legendary | set_explosive	weapon_exploding effect_explode_melee=1 | weapon_projectiles_on_hit effect_lightning_on_hit=1	res://weapons/melee/dextroyer/4/dextroyer_4_data.tres
+武器档位	双管霰弹枪	Double Barrel Shotgun	weapon_double_barrel_shotgun_1	本体	0	20	远程	3	70	stat_ranged_damage×0.8	0.03	2	set_gun		res://weapons/ranged/double_barrel_shotgun/1/double_barrel_shotgun_data.tres
+武器档位	双管霰弹枪 II	Double Barrel Shotgun II	weapon_double_barrel_shotgun_2	本体	1	39	远程	6	65	stat_ranged_damage×0.85	0.03	2	set_gun		res://weapons/ranged/double_barrel_shotgun/2/double_barrel_shotgun_2_data.tres
+武器档位	双管霰弹枪 III	Double Barrel Shotgun III	weapon_double_barrel_shotgun_3	本体	2	74	远程	9	60	stat_ranged_damage×0.9	0.03	2	set_gun		res://weapons/ranged/double_barrel_shotgun/3/double_barrel_shotgun_3_data.tres
+武器档位	双管霰弹枪 IV	Double Barrel Shotgun IV	weapon_double_barrel_shotgun_4	本体	3	149	远程	9	60	stat_ranged_damage×1	0.03	2	set_gun		res://weapons/ranged/double_barrel_shotgun/4/double_barrel_shotgun_4_data.tres
+武器档位	钻机 IV	Drill IV	weapon_drill_4	本体	3	250	近战	10	2	stat_melee_damage×1 + stat_engineering×1	0.5	2.5	set_legendary | set_precise	weapon_null gold_on_crit_kill=100 | temp_stats_per_interval stat_attack_speed→temp_stats_per_interval=10	res://weapons/melee/drill/4/drill_4_data.tres
+武器档位	王者之剑 IV	Excalibur IV	weapon_excalibur_4	本体	3	230	近战	200	3	stat_melee_damage×2 + stat_max_hp×2	0.1	2.5	set_legendary | set_blade	effect stat_armor→additional_weapon_effects=-2	res://weapons/melee/excalibur/4/excalibur_4_data.tres
+武器档位	短木棍	Quarterstaff	weapon_fighting_stick_1	本体	0	15	近战	10	50	stat_levels×0.75 + stat_melee_damage×0.5	0.03	1.5	set_primitive | set_medieval	effect xp_gain=2	res://weapons/melee/fighting_stick/1/fighting_stick_data.tres
+武器档位	短木棍 II	Quarterstaff II	weapon_fighting_stick_2	本体	1	31	近战	15	40	stat_levels×0.85 + stat_melee_damage×0.65	0.03	1.5	set_primitive | set_medieval	effect xp_gain=5	res://weapons/melee/fighting_stick/2/fighting_stick_2_data.tres
+武器档位	短木棍 III	Quarterstaff III	weapon_fighting_stick_3	本体	2	61	近战	20	30	stat_levels×1 + stat_melee_damage×0.8	0.03	1.5	set_primitive | set_medieval	effect xp_gain=9	res://weapons/melee/fighting_stick/3/fighting_stick_3_data.tres
+武器档位	短木棍 IV	Quarterstaff IV	weapon_fighting_stick_4	本体	3	122	近战	30	20	stat_levels×1.25 + stat_melee_damage×1	0.03	1.5	set_primitive | set_medieval	effect xp_gain=15	res://weapons/melee/fighting_stick/4/fighting_stick_4_data.tres
+武器档位	火球 II	Fireball II	weapon_fireball_2	本体	1	36	远程	5	55	stat_elemental_damage×0.25	0.03	1.5	set_explosive | set_elemental	weapon_exploding effect_explode=0 | weapon_burning effect_burning=0	res://weapons/ranged/fireball/2/fireball_2_data.tres
+武器档位	火球 III	Fireball III	weapon_fireball_3	本体	2	66	远程	10	50	stat_elemental_damage×0.5	0.03	1.5	set_explosive | set_elemental	weapon_exploding effect_explode=0 | weapon_burning effect_burning=0	res://weapons/ranged/fireball/3/fireball_3_data.tres
+武器档位	火球 IV	Fireball IV	weapon_fireball_4	本体	3	140	远程	20	40	stat_elemental_damage×0.75	0.03	1.5	set_explosive | set_elemental	weapon_exploding effect_explode=0 | weapon_burning effect_burning=0	res://weapons/ranged/fireball/4/fireball_4_data.tres
+武器档位	拳	Fist	weapon_fist_1	本体	0	10	近战	8	13	stat_melee_damage×1	0.01	1.5	set_unarmed		res://weapons/melee/fist/1/fist_data.tres
+武器档位	拳 II	Fist II	weapon_fist_2	本体	1	22	近战	16	10	stat_melee_damage×1	0.01	1.5	set_unarmed		res://weapons/melee/fist/2/fist_2_data.tres
+武器档位	拳 III	Fist III	weapon_fist_3	本体	2	45	近战	32	8	stat_melee_damage×1	0.01	1.5	set_unarmed		res://weapons/melee/fist/3/fist_3_data.tres
+武器档位	拳 IV	Fist IV	weapon_fist_4	本体	3	91	近战	64	2	stat_melee_damage×1	0.01	1.5	set_unarmed		res://weapons/melee/fist/4/fist_4_data.tres
+武器档位	喷火器 II	Flamethrower II	weapon_flamethrower_2	本体	1	56	远程	1	5	stat_elemental_damage×0.01	0	2	set_elemental | set_heavy	weapon_burning effect_burning=0	res://weapons/ranged/flamethrower/2/flamethrower_2_data.tres
+武器档位	喷火器 III	Flamethrower III	weapon_flamethrower_3	本体	2	103	远程	1	5	stat_elemental_damage×0.01	0	2	set_elemental | set_heavy	weapon_burning effect_burning=0	res://weapons/ranged/flamethrower/3/flamethrower_3_data.tres
+武器档位	喷火器 IV	Flamethrower IV	weapon_flamethrower_4	本体	3	207	远程	1	3	stat_elemental_damage×0.01	0	2	set_elemental | set_heavy	weapon_burning effect_burning=0	res://weapons/ranged/flamethrower/4/flamethrower_4_data.tres
+武器档位	烈焰黄铜指虎 II	Flaming Brass Knuckles II	weapon_flaming_brass_knuckles_2	本体	1	46	近战	20	10	stat_melee_damage×1	0.01	1.5	set_unarmed | set_elemental	weapon_burning effect_burning=0	res://weapons/melee/flaming_knuckles/2/flaming_knuckles_2_data.tres
+武器档位	烈焰黄铜指虎 III	Flaming Brass Knuckles III	weapon_flaming_brass_knuckles_3	本体	2	86	近战	40	8	stat_melee_damage×1	0.01	1.5	set_unarmed | set_elemental	weapon_burning effect_burning=0	res://weapons/melee/flaming_knuckles/3/flaming_knuckles_3_data.tres
+武器档位	烈焰黄铜指虎 IV	Flaming Brass Knuckles IV	weapon_flaming_brass_knuckles_4	本体	3	173	近战	80	2	stat_melee_damage×1	0.01	1.5	set_unarmed | set_elemental	weapon_burning effect_burning=0	res://weapons/melee/flaming_knuckles/4/flaming_knuckles_4_data.tres
+武器档位	加特林激光 IV	Gatling Laser IV	weapon_gatling_laser_4	本体	3	290	远程	10	2	stat_ranged_damage×1	0.1	3	set_legendary | set_heavy		res://weapons/ranged/gatling_laser/4/gatling_laser_4_data.tres
+武器档位	幽魂斧	Ghost Axe	weapon_ghost_axe_1	本体	0	20	近战	12	67	stat_melee_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=20	res://weapons/melee/ghost_axe/1/ghost_axe_data.tres
+武器档位	幽魂斧 II	Ghost Axe II	weapon_ghost_axe_2	本体	1	39	近战	18	63	stat_melee_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=18	res://weapons/melee/ghost_axe/2/ghost_axe_2_data.tres
+武器档位	幽魂斧 III	Ghost Axe III	weapon_ghost_axe_3	本体	2	74	近战	24	58	stat_melee_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=16	res://weapons/melee/ghost_axe/3/ghost_axe_3_data.tres
+武器档位	幽魂斧 IV	Ghost Axe IV	weapon_ghost_axe_4	本体	3	149	近战	40	54	stat_melee_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=12	res://weapons/melee/ghost_axe/4/ghost_axe_4_data.tres
+武器档位	幽魂燧石	Ghost Flint	weapon_ghost_flint_1	本体	0	12	近战	6	40	stat_melee_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=20	res://weapons/melee/ghost_flint/1/ghost_flint_data.tres
+武器档位	幽魂燧石 II	Ghost Flint II	weapon_ghost_flint_2	本体	1	26	近战	9	36	stat_melee_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=18	res://weapons/melee/ghost_flint/2/ghost_flint_2_data.tres
+武器档位	幽魂燧石 III	Ghost Flint III	weapon_ghost_flint_3	本体	2	52	近战	12	31	stat_melee_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=16	res://weapons/melee/ghost_flint/3/ghost_flint_3_data.tres
+武器档位	幽魂燧石 IV	Ghost Flint IV	weapon_ghost_flint_4	本体	3	105	近战	20	27	stat_melee_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=12	res://weapons/melee/ghost_flint/4/ghost_flint_4_data.tres
+武器档位	幽魂节杖	Ghost Scepter	weapon_ghost_scepter_1	本体	0	15	远程	10	47	stat_ranged_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=20	res://weapons/ranged/ghost_scepter/1/ghost_scepter_data.tres
+武器档位	幽魂节杖 II	Ghost Scepter II	weapon_ghost_scepter_2	本体	1	31	远程	15	44	stat_ranged_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=18	res://weapons/ranged/ghost_scepter/2/ghost_scepter_2_data.tres
+武器档位	幽魂节杖 III	Ghost Scepter III	weapon_ghost_scepter_3	本体	2	61	远程	20	41	stat_ranged_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=16	res://weapons/ranged/ghost_scepter/3/ghost_scepter_3_data.tres
+武器档位	幽魂节杖 IV	Ghost Scepter IV	weapon_ghost_scepter_4	本体	3	122	远程	30	38	stat_ranged_damage×1	0.03	2	set_ethereal	weapon_gain_stat_every_killed_enemies effect_gain_stat_every_killed_enemies=12	res://weapons/ranged/ghost_scepter/4/ghost_scepter_4_data.tres
+武器档位	铁锤 II	Hammer II	weapon_hammer_2	本体	1	46	近战	40	65	stat_melee_damage×1.5	0.03	1.75	set_blunt | set_heavy	effect knockback=2	res://weapons/melee/hammer/2/hammer_2_data.tres
+武器档位	铁锤 III	Hammer III	weapon_hammer_3	本体	2	86	近战	75	60	stat_melee_damage×1.75	0.03	1.75	set_blunt | set_heavy	effect knockback=4	res://weapons/melee/hammer/3/hammer_3_data.tres
+武器档位	铁锤 IV	Hammer IV	weapon_hammer_4	本体	3	151	近战	120	55	stat_melee_damage×2	0.03	1.75	set_blunt | set_heavy	effect knockback=6	res://weapons/melee/hammer/4/hammer_4_data.tres
+武器档位	掌	Hand	weapon_hand_1	本体	0	10	近战	1	27	stat_melee_damage×0.5	0.01	1.5	set_unarmed | set_support	effect stat_harvesting=3	res://weapons/melee/hand/1/hand_data.tres
+武器档位	掌 II	Hand II	weapon_hand_2	本体	1	22	近战	1	22	stat_melee_damage×0.5	0.01	1.5	set_unarmed | set_support	effect stat_harvesting=6	res://weapons/melee/hand/2/hand_2_data.tres
+武器档位	掌 III	Hand III	weapon_hand_3	本体	2	45	近战	1	18	stat_melee_damage×0.5	0.01	1.5	set_unarmed | set_support	effect stat_harvesting=12	res://weapons/melee/hand/3/hand_3_data.tres
+武器档位	掌 IV	Hand IV	weapon_hand_4	本体	3	91	近战	1	9	stat_melee_damage×0.5	0.01	1.5	set_unarmed | set_support	effect stat_harvesting=25	res://weapons/melee/hand/4/hand_4_data.tres
+武器档位	短斧	Hatchet	weapon_hatchet_1	本体	0	10	近战	7	9	stat_melee_damage×1 + stat_attack_speed×0.2	0.03	2	set_primitive		res://weapons/melee/hatchet/1/hatchet_data.tres
+武器档位	短斧 II	Hatchet II	weapon_hatchet_2	本体	1	22	近战	11	8	stat_melee_damage×1 + stat_attack_speed×0.2	0.03	2	set_primitive		res://weapons/melee/hatchet/2/hatchet_2_data.tres
+武器档位	短斧 III	Hatchet III	weapon_hatchet_3	本体	2	45	近战	22	7	stat_melee_damage×1 + stat_attack_speed×0.2	0.03	2	set_primitive		res://weapons/melee/hatchet/3/hatchet_3_data.tres
+武器档位	短斧 IV	Hatchet IV	weapon_hatchet_4	本体	3	91	近战	45	6	stat_melee_damage×1 + stat_attack_speed×0.2	0.03	2	set_primitive		res://weapons/melee/hatchet/4/hatchet_4_data.tres
+武器档位	冰锥	Icicle	weapon_icicle_1	本体	0	18	远程	10	50	stat_elemental_damage×1	0.05	2	set_precise | set_elemental		res://weapons/ranged/icicle/1/icicle_data.tres
+武器档位	冰锥 II	Icicle II	weapon_icicle_2	本体	1	36	远程	20	45	stat_elemental_damage×1	0.1	2	set_precise | set_elemental		res://weapons/ranged/icicle/2/icicle_2_data.tres
+武器档位	冰锥 III	Icicle III	weapon_icicle_3	本体	2	66	远程	30	40	stat_elemental_damage×1	0.15	2.5	set_precise | set_elemental		res://weapons/ranged/icicle/3/icicle_3_data.tres
+武器档位	冰锥 IV	Icicle IV	weapon_icicle_4	本体	3	140	远程	40	30	stat_elemental_damage×1	0.2	3	set_precise | set_elemental		res://weapons/ranged/icicle/4/icicle_4_data.tres
+武器档位	长矛	Jousting Lance	weapon_jousting_lance_1	本体	0	20	近战	20	55	stat_melee_damage×0.5 + stat_speed×0.3	0.03	2	set_medieval	effect stat_speed=2 | effect stat_percent_damage→temp_stats_while_not_moving=-10	res://weapons/melee/jousting_lance/1/jousting_lance_data.tres
+武器档位	长矛 II	Jousting Lance II	weapon_jousting_lance_2	本体	1	36	近战	25	50	stat_melee_damage×0.5 + stat_speed×0.35	0.03	2	set_medieval	effect stat_speed=3 | effect stat_percent_damage→temp_stats_while_not_moving=-15	res://weapons/melee/jousting_lance/2/jousting_lance_2_data.tres
+武器档位	长矛 III	Jousting Lance III	weapon_jousting_lance_3	本体	2	72	近战	30	45	stat_melee_damage×0.5 + stat_speed×0.4	0.03	2	set_medieval	effect stat_speed=4 | effect stat_percent_damage→temp_stats_while_not_moving=-20	res://weapons/melee/jousting_lance/3/jousting_lance_3_data.tres
+武器档位	长矛 IV	Jousting Lance IV	weapon_jousting_lance_4	本体	3	132	近战	50	40	stat_melee_damage×0.5 + stat_speed×0.5	0.03	2	set_medieval	effect stat_speed=5 | effect stat_percent_damage→temp_stats_while_not_moving=-25	res://weapons/melee/jousting_lance/4/jousting_lance_4_data.tres
+武器档位	小刀	Knife	weapon_knife_1	本体	0	10	近战	9	25	stat_melee_damage×0.8	0.2	2.5	set_precise		res://weapons/melee/knife/1/knife_data.tres
+武器档位	小刀 II	Knife II	weapon_knife_2	本体	1	22	近战	13	21	stat_melee_damage×0.8	0.3	3	set_precise		res://weapons/melee/knife/2/knife_2_data.tres
+武器档位	小刀 III	Knife III	weapon_knife_3	本体	2	45	近战	18	17	stat_melee_damage×0.8	0.4	3.5	set_precise		res://weapons/melee/knife/3/knife_3_data.tres
+武器档位	小刀 IV	Knife IV	weapon_knife_4	本体	3	91	近战	25	12	stat_melee_damage×0.8	0.5	4	set_precise		res://weapons/melee/knife/4/knife_4_data.tres
+武器档位	激光枪	Laser Gun	weapon_laser_gun_1	本体	0	15	远程	40	95	stat_ranged_damage×4	0.03	2	set_gun		res://weapons/ranged/laser_gun/1/laser_gun_data.tres
+武器档位	激光枪 II	Laser Gun II	weapon_laser_gun_2	本体	1	31	远程	55	90	stat_ranged_damage×4.5	0.03	2	set_gun		res://weapons/ranged/laser_gun/2/laser_gun_2_data.tres
+武器档位	激光枪 III	Laser Gun III	weapon_laser_gun_3	本体	2	61	远程	70	85	stat_ranged_damage×5	0.03	2	set_gun		res://weapons/ranged/laser_gun/3/laser_gun_3_data.tres
+武器档位	激光枪 IV	Laser Gun IV	weapon_laser_gun_4	本体	3	122	远程	100	75	stat_ranged_damage×6	0.03	2	set_gun		res://weapons/ranged/laser_gun/4/laser_gun_4_data.tres
+武器档位	雷光刀	Lightning Shiv	weapon_lightning_shiv_1	本体	0	18	近战	3	27	stat_melee_damage×0.8	0.04	2	set_precise | set_elemental	weapon_projectiles_on_hit effect_lightning_on_hit=1	res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres
+武器档位	雷光刀 II	Lightning Shiv II	weapon_lightning_shiv_2	本体	1	36	近战	6	22	stat_melee_damage×0.8	0.06	2	set_precise | set_elemental	weapon_projectiles_on_hit effect_lightning_on_hit=1	res://weapons/melee/lightning_shiv/2/lightning_shiv_2_data.tres
+武器档位	雷光刀 III	Lightning Shiv III	weapon_lightning_shiv_3	本体	2	66	近战	9	18	stat_melee_damage×0.8	0.08	2	set_precise | set_elemental	weapon_projectiles_on_hit effect_lightning_on_hit=1	res://weapons/melee/lightning_shiv/3/lightning_shiv_3_data.tres
+武器档位	雷光刀 IV	Lightning Shiv IV	weapon_lightning_shiv_4	本体	3	142	近战	15	13	stat_melee_damage×0.8	0.1	2	set_precise | set_elemental	weapon_projectiles_on_hit effect_lightning_on_hit=1	res://weapons/melee/lightning_shiv/4/lightning_shiv_4_data.tres
+武器档位	医疗枪	Medical Gun	weapon_medical_gun_1	本体	0	15	远程	10	35	stat_ranged_damage×1	0.03	2	set_medical | set_gun		res://weapons/ranged/medical_gun/1/medical_gun_data.tres
+武器档位	医疗枪 II	Medical Gun II	weapon_medical_gun_2	本体	1	31	远程	15	30	stat_ranged_damage×1	0.03	2	set_medical | set_gun		res://weapons/ranged/medical_gun/2/medical_gun_2_data.tres
+武器档位	医疗枪 III	Medical Gun III	weapon_medical_gun_3	本体	2	61	远程	20	25	stat_ranged_damage×1	0.03	2	set_medical | set_gun		res://weapons/ranged/medical_gun/3/medical_gun_3_data.tres
+武器档位	医疗枪 IV	Medical Gun IV	weapon_medical_gun_4	本体	3	122	远程	30	17	stat_ranged_damage×1	0.03	2	set_medical | set_gun		res://weapons/ranged/medical_gun/4/medical_gun_4_data.tres
+武器档位	加特林机枪 III	Minigun III	weapon_minigun_3	本体	2	127	远程	2	3	stat_ranged_damage×0.5	0.01	1.75	set_heavy | set_gun		res://weapons/ranged/minigun/3/minigun_3_data.tres
+武器档位	加特林机枪 IV	Minigun IV	weapon_minigun_4	本体	3	255	远程	5	3	stat_ranged_damage×0.75	0.03	2	set_heavy | set_gun		res://weapons/ranged/minigun/4/minigun_4_data.tres
+武器档位	核弹发射器 III	Nuclear Launcher III	weapon_nuclear_launcher_3	本体	2	144	远程	60	110	stat_ranged_damage×1 + stat_elemental_damage×1	0.03	2	set_heavy | set_explosive	weapon_exploding effect_explode=0	res://weapons/ranged/nuclear_launcher/3/nuclear_launcher_3_data.tres
+武器档位	核弹发射器 IV	Nuclear Launcher IV	weapon_nuclear_launcher_4	本体	3	289	远程	120	110	stat_ranged_damage×1 + stat_elemental_damage×1	0.03	2	set_heavy | set_explosive	weapon_exploding effect_explode=0	res://weapons/ranged/nuclear_launcher/4/nuclear_launcher_4_data.tres
+武器档位	毁灭者 III	Obliterator III	weapon_obliterator_3	本体	2	127	远程	250	170	stat_ranged_damage×10	0.03	2	set_heavy | set_gun		res://weapons/ranged/obliterator/3/obliterator_3_data.tres
+武器档位	毁灭者 IV	Obliterator IV	weapon_obliterator_4	本体	3	255	远程	400	170	stat_ranged_damage×15	0.03	2	set_heavy | set_gun		res://weapons/ranged/obliterator/4/obliterator_4_data.tres
+武器档位	粒子加速器 III	Particle Accelerator III	weapon_particle_accelerator_3	本体	2	144	远程	60	100	stat_elemental_damage×1 + stat_engineering×1	0.03	2	set_heavy | set_elemental	weapon_burning effect_burning=0 | weapon_slow_on_hit EFFECT_WEAPON_SLOW_ON_HIT=1	res://weapons/ranged/particle_accelerator/3/particle_accelerator_3_data.tres
+武器档位	粒子加速器 IV	Particle Accelerator IV	weapon_particle_accelerator_4	本体	3	289	远程	120	80	stat_elemental_damage×1 + stat_engineering×1	0.03	2	set_heavy | set_elemental	weapon_burning effect_burning=0 | weapon_slow_on_hit EFFECT_WEAPON_SLOW_ON_HIT=2	res://weapons/ranged/particle_accelerator/4/particle_accelerator_4_data.tres
+武器档位	手枪	Pistol	weapon_pistol_1	本体	0	10	远程	12	60	stat_ranged_damage×1	0.1	2	set_gun		res://weapons/ranged/pistol/1/pistol_data.tres
+武器档位	手枪 II	Pistol II	weapon_pistol_2	本体	1	22	远程	20	55	stat_ranged_damage×1	0.15	2	set_gun		res://weapons/ranged/pistol/2/pistol_2_data.tres
+武器档位	手枪 III	Pistol III	weapon_pistol_3	本体	2	45	远程	30	50	stat_ranged_damage×1	0.2	2	set_gun		res://weapons/ranged/pistol/3/pistol_3_data.tres
+武器档位	手枪 IV	Pistol IV	weapon_pistol_4	本体	3	91	远程	50	40	stat_ranged_damage×1	0.25	2	set_gun		res://weapons/ranged/pistol/4/pistol_4_data.tres
+武器档位	木板	Plank	weapon_plank_1	本体	0	15	近战	10	40	stat_melee_damage×0.6 + stat_elemental_damage×0.6 + stat_engineering×0.6	0.03	2	set_explosive | set_elemental	weapon_exploding effect_explode_melee=1	res://weapons/melee/plank/1/plank_data.tres
+武器档位	木板 II	Plank II	weapon_plank_2	本体	1	31	近战	15	35	stat_melee_damage×0.7 + stat_elemental_damage×0.7 + stat_engineering×0.7	0.03	2	set_explosive | set_elemental	weapon_exploding effect_explode_melee=1	res://weapons/melee/plank/2/plank_2_data.tres
+武器档位	木板 III	Plank III	weapon_plank_3	本体	2	61	近战	20	30	stat_melee_damage×0.8 + stat_elemental_damage×0.8 + stat_engineering×0.8	0.03	2	set_explosive | set_elemental	weapon_exploding effect_explode_melee=1	res://weapons/melee/plank/3/plank_3_data.tres
+武器档位	木板 IV	Plank IV	weapon_plank_4	本体	3	122	近战	30	25	stat_melee_damage×0.9 + stat_elemental_damage×0.9 + stat_engineering×0.9	0.03	2	set_explosive | set_elemental	weapon_exploding effect_explode_melee=1	res://weapons/melee/plank/4/plank_4_data.tres
+武器档位	等离子大锤 III	Plasma Sledge III	weapon_plasma_sledgehammer_3	本体	2	136	近战	80	58	stat_melee_damage×1.5 + stat_elemental_damage×1.5	0.03	1.75	set_elemental | set_explosive	weapon_exploding effect_explode_melee=1	res://weapons/melee/plasma_sledgehammer/3/plasma_sledgehammer_3_data.tres
+武器档位	等离子大锤 IV	Plasma Sledge IV	weapon_plasma_sledgehammer_4	本体	3	272	近战	120	54	stat_melee_damage×2 + stat_elemental_damage×2	0.03	1.75	set_elemental | set_explosive	weapon_exploding effect_explode_melee=1	res://weapons/melee/plasma_sledgehammer/4/plasma_sledgehammer_4_data.tres
+武器档位	土豆发射器 II	Potato Thrower II	weapon_potato_thrower_2	本体	1	36	远程	3	15	stat_ranged_damage×0.4 + stat_max_hp×0.2	0.03	1.5	set_support		res://weapons/ranged/potato_thrower/2/potato_thrower_2_data.tres
+武器档位	土豆发射器 III	Potato Thrower III	weapon_potato_thrower_3	本体	2	69	远程	5	10	stat_ranged_damage×0.4 + stat_max_hp×0.2	0.03	1.5	set_support		res://weapons/ranged/potato_thrower/3/potato_thrower_3_data.tres
+武器档位	土豆发射器 IV	Potato Thrower IV	weapon_potato_thrower_4	本体	3	139	远程	10	5	stat_ranged_damage×0.4 + stat_max_hp×0.2	0.03	1.5	set_support		res://weapons/ranged/potato_thrower/4/potato_thrower_4_data.tres
+武器档位	强拳 III	Power Fist III	weapon_power_fist_3	本体	2	110	近战	40	8	stat_melee_damage×1	0.01	1.5	set_unarmed | set_explosive	weapon_exploding effect_explode_melee=1	res://weapons/melee/power_fist/3/power_fist_3_data.tres
+武器档位	强拳 IV	Power Fist IV	weapon_power_fist_4	本体	3	221	近战	80	2	stat_melee_damage×1	0.01	1.5	set_unarmed | set_explosive	weapon_exploding effect_explode_melee=1	res://weapons/melee/power_fist/4/power_fist_4_data.tres
+武器档位	修枝剪刀	Pruner	weapon_pruner_1	本体	0	15	近战	10	35	stat_melee_damage×0.5	0.03	1.25	set_support	turret =1	res://weapons/melee/pruner/1/pruner_data.tres
+武器档位	修枝剪刀 II	Pruner II	weapon_pruner_2	本体	1	28	近战	15	30	stat_melee_damage×0.65	0.06	1.5	set_support	turret =1	res://weapons/melee/pruner/2/pruner_2_data.tres
+武器档位	修枝剪刀 III	Pruner III	weapon_pruner_3	本体	2	52	近战	20	25	stat_melee_damage×0.8	0.09	1.75	set_support	turret =1	res://weapons/melee/pruner/3/pruner_3_data.tres
+武器档位	修枝剪刀 IV	Pruner IV	weapon_pruner_4	本体	3	95	近战	25	20	stat_melee_damage×1	0.12	2	set_support	turret =1	res://weapons/melee/pruner/4/pruner_4_data.tres
+武器档位	磁轨炮	Rail Gun	weapon_rail_gun_1	本体	0	20	远程	10	52	stat_ranged_damage×0.8 + stat_dodge×0.3	0.03	1.5	set_gun | set_heavy	effect_no_hit_boost effect_no_hit_boost=3	res://weapons/ranged/rail_gun/1/rail_gun_1_data.tres
+武器档位	磁轨炮 II	Rail Gun II	weapon_rail_gun_2	本体	1	40	远程	15	49	stat_ranged_damage×0.8 + stat_dodge×0.35	0.03	1.75	set_gun | set_heavy	effect_no_hit_boost effect_no_hit_boost=4	res://weapons/ranged/rail_gun/2/rail_gun_2_data.tres
+武器档位	磁轨炮 III	Rail Gun III	weapon_rail_gun_3	本体	2	80	远程	20	47	stat_ranged_damage×0.9 + stat_dodge×0.4	0.03	2	set_gun | set_heavy	effect_no_hit_boost effect_no_hit_boost=5	res://weapons/ranged/rail_gun/3/rail_gun_3_data.tres
+武器档位	磁轨炮 IV	Rail Gun IV	weapon_rail_gun_4	本体	3	160	远程	35	45	stat_ranged_damage×1 + stat_dodge×0.45	0.03	2.25	set_gun | set_heavy	effect_no_hit_boost effect_no_hit_boost=6	res://weapons/ranged/rail_gun/4/rail_gun_4_data.tres
+武器档位	左轮手枪	Revolver	weapon_revolver_1	本体	0	20	远程	15	14	stat_ranged_damage×1	0.03	2	set_gun		res://weapons/ranged/revolver/1/revolver_data.tres
+武器档位	左轮手枪 II	Revolver II	weapon_revolver_2	本体	1	34	远程	20	13	stat_ranged_damage×1.3	0.03	2	set_gun		res://weapons/ranged/revolver/2/revolver_2_data.tres
+武器档位	左轮手枪 III	Revolver III	weapon_revolver_3	本体	2	70	远程	25	12	stat_ranged_damage×1.65	0.03	2	set_gun		res://weapons/ranged/revolver/3/revolver_3_data.tres
+武器档位	左轮手枪 IV	Revolver IV	weapon_revolver_4	本体	3	130	远程	40	11	stat_ranged_damage×2	0.03	2	set_gun		res://weapons/ranged/revolver/4/revolver_4_data.tres
+武器档位	石头	Rock	weapon_rock_1	本体	0	10	近战	20	67	stat_melee_damage×1	0.1	1.5	set_primitive | set_blunt		res://weapons/melee/rock/1/rock_data.tres
+武器档位	石头 II	Rock II	weapon_rock_2	本体	1	22	近战	35	63	stat_melee_damage×1	0.15	1.5	set_primitive | set_blunt	effect stat_armor=1	res://weapons/melee/rock/2/rock_2_data.tres
+武器档位	石头 III	Rock III	weapon_rock_3	本体	2	45	近战	50	58	stat_melee_damage×1	0.2	1.5	set_primitive | set_blunt	effect stat_armor=1 | effect stat_max_hp=2	res://weapons/melee/rock/3/rock_3_data.tres
+武器档位	石头 IV	Rock IV	weapon_rock_4	本体	3	91	近战	70	54	stat_melee_damage×1	0.25	1.5	set_primitive | set_blunt	effect stat_armor=2 | effect stat_max_hp=2	res://weapons/melee/rock/4/rock_4_data.tres
+武器档位	火箭筒 II	Rocket Launcher II	weapon_rocket_launcher_2	本体	1	56	远程	30	90	stat_ranged_damage×1	0.03	2	set_heavy | set_explosive	weapon_exploding effect_explode=0	res://weapons/ranged/rocket_launcher/2/rocket_launcher_2_data.tres
+武器档位	火箭筒 III	Rocket Launcher III	weapon_rocket_launcher_3	本体	2	103	远程	50	65	stat_ranged_damage×1	0.03	2	set_heavy | set_explosive	weapon_exploding effect_explode=0	res://weapons/ranged/rocket_launcher/3/rocket_launcher_3_data.tres
+武器档位	火箭筒 IV	Rocket Launcher IV	weapon_rocket_launcher_4	本体	3	207	远程	80	45	stat_ranged_damage×1	0.03	2	set_heavy | set_explosive	weapon_exploding effect_explode=0	res://weapons/ranged/rocket_launcher/4/rocket_launcher_4_data.tres
+武器档位	剪刀	Scissors	weapon_scissors_1	本体	0	15	近战	5	27	stat_melee_damage×0.8	0.1	2	set_medical | set_precise		res://weapons/melee/scissors/1/scissors_data.tres
+武器档位	剪刀 II	Scissors II	weapon_scissors_2	本体	1	31	近战	10	25	stat_melee_damage×0.8	0.12	2.15	set_medical | set_precise		res://weapons/melee/scissors/2/scissors_2_data.tres
+武器档位	剪刀 III	Scissors III	weapon_scissors_3	本体	2	61	近战	15	23	stat_melee_damage×0.8	0.15	2.3	set_medical | set_precise		res://weapons/melee/scissors/3/scissors_3_data.tres
+武器档位	剪刀 IV	Scissors IV	weapon_scissors_4	本体	3	122	近战	20	18	stat_melee_damage×0.8	0.2	2.5	set_medical | set_precise		res://weapons/melee/scissors/4/scissors_4_data.tres
+武器档位	螺丝刀	Screwdriver	weapon_screwdriver_1	本体	0	10	近战	8	31	stat_melee_damage×0.5 + stat_engineering×0.5	0.1	2	set_tool	structure =1	res://weapons/melee/screwdriver/1/screwdriver_data.tres
+武器档位	螺丝刀 II	Screwdriver II	weapon_screwdriver_2	本体	1	22	近战	12	28	stat_melee_damage×0.5 + stat_engineering×0.6	0.15	2.15	set_tool	structure =1	res://weapons/melee/screwdriver/2/screwdriver_2_data.tres
+武器档位	螺丝刀 III	Screwdriver III	weapon_screwdriver_3	本体	2	45	近战	16	26	stat_melee_damage×0.5 + stat_engineering×0.7	0.2	2.3	set_tool	structure =1	res://weapons/melee/screwdriver/3/screwdriver_3_data.tres
+武器档位	螺丝刀 IV	Screwdriver IV	weapon_screwdriver_4	本体	3	91	近战	20	20	stat_melee_damage×0.5 + stat_engineering×0.8	0.3	2.5	set_tool	structure =1	res://weapons/melee/screwdriver/4/screwdriver_4_data.tres
+武器档位	大镰 IV	Scythe IV	weapon_scythe_4	本体	3	285	近战	150	3	stat_melee_damage×1 + stat_lifesteal×1	0.03	2	set_legendary | set_ethereal	effect lose_hp_per_second=3 | effect stat_percent_damage→temp_stats_on_hit=3	res://weapons/melee/scythe/4/scythe_4_data.tres
+武器档位	尖牙	Sharp Tooth	weapon_sharp_tooth_1	本体	0	12	近战	5	35	stat_melee_damage×0.5 + stat_lifesteal×0.5	0.03	2	set_primitive | set_precise	gain_stat_for_every_stat stat_lifesteal=1	res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres
+武器档位	尖牙 II	Sharp Tooth II	weapon_sharp_tooth_2	本体	1	26	近战	8	30	stat_melee_damage×0.5 + stat_lifesteal×0.65	0.06	2.15	set_primitive | set_precise	gain_stat_for_every_stat stat_lifesteal=1	res://weapons/melee/sharp_tooth/2/sharp_tooth_2_data.tres
+武器档位	尖牙 III	Sharp Tooth III	weapon_sharp_tooth_3	本体	2	52	近战	11	25	stat_melee_damage×0.5 + stat_lifesteal×0.8	0.09	2.3	set_primitive | set_precise	gain_stat_for_every_stat stat_lifesteal=1	res://weapons/melee/sharp_tooth/3/sharp_tooth_3_data.tres
+武器档位	尖牙 IV	Sharp Tooth IV	weapon_sharp_tooth_4	本体	3	105	近战	15	20	stat_melee_damage×0.5 + stat_lifesteal×1	0.12	2.5	set_primitive | set_precise	gain_stat_for_every_stat stat_lifesteal=1	res://weapons/melee/sharp_tooth/4/sharp_tooth_4_data.tres
+武器档位	粉碎者	Shredder	weapon_shredder_1	本体	0	15	远程	5	60	stat_ranged_damage×0.5	0.03	2	set_gun | set_explosive	weapon_exploding effect_explode_custom=0	res://weapons/ranged/shredder/1/shredder_data.tres
+武器档位	粉碎者 II	Shredder II	weapon_shredder_2	本体	1	31	远程	10	55	stat_ranged_damage×0.5	0.03	2	set_gun | set_explosive	weapon_exploding effect_explode_custom=0	res://weapons/ranged/shredder/2/shredder_2_data.tres
+武器档位	粉碎者 III	Shredder III	weapon_shredder_3	本体	2	61	远程	15	50	stat_ranged_damage×0.5	0.03	2	set_gun | set_explosive	weapon_exploding effect_explode_custom=0	res://weapons/ranged/shredder/3/shredder_3_data.tres
+武器档位	粉碎者 IV	Shredder IV	weapon_shredder_4	本体	3	122	远程	25	45	stat_ranged_damage×0.5	0.03	2	set_gun | set_explosive	weapon_exploding effect_explode=0	res://weapons/ranged/shredder/4/shredder_4_data.tres
+武器档位	手里剑	Shuriken	weapon_shuriken_1	本体	0	12	远程	7	40	stat_melee_damage×0.25	0.35	1.5	set_precise	weapon_null bounce_on_crit=1	res://weapons/ranged/shuriken/1/shuriken_data.tres
+武器档位	手里剑 II	Shuriken II	weapon_shuriken_2	本体	1	26	远程	9	38	stat_melee_damage×0.34	0.38	1.5	set_precise	weapon_null bounce_on_crit=2	res://weapons/ranged/shuriken/2/shuriken_2_data.tres
+武器档位	手里剑 III	Shuriken III	weapon_shuriken_3	本体	2	52	远程	11	36	stat_melee_damage×0.42	0.41	1.5	set_precise	weapon_null bounce_on_crit=3	res://weapons/ranged/shuriken/3/shuriken_3_data.tres
+武器档位	手里剑 IV	Shuriken IV	weapon_shuriken_4	本体	3	105	远程	15	30	stat_melee_damage×0.5	0.45	1.5	set_precise	weapon_null bounce_on_crit=4	res://weapons/ranged/shuriken/4/shuriken_4_data.tres
+武器档位	弹弓	Slingshot	weapon_slingshot_1	本体	0	15	远程	10	55	stat_ranged_damage×0.8	0.03	2	set_primitive		res://weapons/ranged/slingshot/1/slingshot_data.tres
+武器档位	弹弓 II	Slingshot II	weapon_slingshot_2	本体	1	31	远程	13	52	stat_ranged_damage×0.8	0.03	2	set_primitive		res://weapons/ranged/slingshot/2/slingshot_2_data.tres
+武器档位	弹弓 III	Slingshot III	weapon_slingshot_3	本体	2	61	远程	16	50	stat_ranged_damage×0.8	0.03	2	set_primitive		res://weapons/ranged/slingshot/3/slingshot_3_data.tres
+武器档位	弹弓 IV	Slingshot IV	weapon_slingshot_4	本体	3	122	远程	20	48	stat_ranged_damage×0.8	0.03	2	set_primitive		res://weapons/ranged/slingshot/4/slingshot_4_data.tres
+武器档位	冲锋枪	SMG	weapon_smg_1	本体	0	20	远程	3	4	stat_ranged_damage×0.5	0.01	1.5	set_gun		res://weapons/ranged/smg/1/smg_data.tres
+武器档位	冲锋枪 II	SMG II	weapon_smg_2	本体	1	39	远程	4	4	stat_ranged_damage×0.6	0.01	1.5	set_gun		res://weapons/ranged/smg/2/smg_2_data.tres
+武器档位	冲锋枪 III	SMG III	weapon_smg_3	本体	2	74	远程	5	4	stat_ranged_damage×0.7	0.01	1.5	set_gun		res://weapons/ranged/smg/3/smg_3_data.tres
+武器档位	冲锋枪 IV	SMG IV	weapon_smg_4	本体	3	149	远程	8	3	stat_ranged_damage×0.8	0.01	1.5	set_gun		res://weapons/ranged/smg/4/smg_4_data.tres
+武器档位	狙击手枪 III	Sniper Gun III	weapon_sniper_gun_3	本体	2	115	远程	50	120	stat_ranged_damage×1 + stat_range×0.2	0.2	3	set_gun | set_precise	weapon_projectiles_on_hit EFFECT_PROJECTILES_ON_HIT=5	res://weapons/ranged/sniper_gun/3/sniper_gun_3_data.tres
+武器档位	狙击手枪 IV	Sniper Gun IV	weapon_sniper_gun_4	本体	3	245	远程	80	120	stat_ranged_damage×1 + stat_range×0.3	0.2	4	set_gun | set_precise	weapon_projectiles_on_hit EFFECT_PROJECTILES_ON_HIT=8	res://weapons/ranged/sniper_gun/4/sniper_gun_4_data.tres
+武器档位	矛	Spear	weapon_spear_1	本体	0	20	近战	15	45	stat_melee_damage×1	0.03	2	set_primitive		res://weapons/melee/spear/1/spear_data.tres
+武器档位	矛 II	Spear II	weapon_spear_2	本体	1	39	近战	25	36	stat_melee_damage×1	0.03	2	set_primitive		res://weapons/melee/spear/2/spear_2_data.tres
+武器档位	矛 III	Spear III	weapon_spear_3	本体	2	74	近战	40	27	stat_melee_damage×1	0.03	2	set_primitive		res://weapons/melee/spear/3/spear_3_data.tres
+武器档位	矛 IV	Spear IV	weapon_spear_4	本体	3	149	近战	60	18	stat_melee_damage×1	0.03	2	set_primitive		res://weapons/melee/spear/4/spear_4_data.tres
+武器档位	尖刺盾	Spiky Shield	weapon_spiky_shield_1	本体	0	15	近战	10	36	stat_armor×1	0.03	2	set_medieval | set_blunt		res://weapons/melee/spiky_shield/1/spiky_shield_data.tres
+武器档位	尖刺盾 II	Spiky Shield II	weapon_spiky_shield_2	本体	1	31	近战	15	36	stat_armor×1.25	0.03	2	set_medieval | set_blunt		res://weapons/melee/spiky_shield/2/spiky_shield_2_data.tres
+武器档位	尖刺盾 III	Spiky Shield III	weapon_spiky_shield_3	本体	2	61	近战	20	36	stat_armor×1.5	0.03	2	set_medieval | set_blunt		res://weapons/melee/spiky_shield/3/spiky_shield_3_data.tres
+武器档位	尖刺盾 IV	Spiky Shield IV	weapon_spiky_shield_4	本体	3	122	近战	30	27	stat_armor×2	0.03	2	set_medieval | set_blunt		res://weapons/melee/spiky_shield/4/spiky_shield_4_data.tres
+武器档位	树枝	Stick	weapon_stick_1	本体	0	10	近战	8	42	stat_melee_damage×1	0.03	1.5	set_primitive	weapon_stack EFFECT_WEAPON_STACK=4	res://weapons/melee/stick/1/stick_data.tres
+武器档位	树枝 II	Stick II	weapon_stick_2	本体	1	22	近战	9	38	stat_melee_damage×1	0.03	1.5	set_primitive	weapon_stack EFFECT_WEAPON_STACK=6	res://weapons/melee/stick/2/stick_2_data.tres
+武器档位	树枝 III	Stick III	weapon_stick_3	本体	2	45	近战	10	34	stat_melee_damage×1	0.03	1.5	set_primitive	weapon_stack EFFECT_WEAPON_STACK=8	res://weapons/melee/stick/3/stick_3_data.tres
+武器档位	树枝 IV	Stick IV	weapon_stick_4	本体	3	91	近战	12	30	stat_melee_damage×1	0.03	1.5	set_primitive	weapon_stack EFFECT_WEAPON_STACK=10	res://weapons/melee/stick/4/stick_4_data.tres
+武器档位	剑 II	Sword II	weapon_sword_2	本体	1	51	近战	30	40	stat_melee_damage×1	0.03	2	set_blade | set_medieval		res://weapons/melee/sword/2/sword_2_data.tres
+武器档位	剑 III	Sword III	weapon_sword_3	本体	2	95	近战	45	31	stat_melee_damage×1	0.03	2	set_blade | set_medieval		res://weapons/melee/sword/3/sword_3_data.tres
+武器档位	剑 IV	Sword IV	weapon_sword_4	本体	3	190	近战	65	22	stat_melee_damage×1	0.03	2	set_blade | set_medieval		res://weapons/melee/sword/4/sword_4_data.tres
+武器档位	电击枪	Taser	weapon_taser_1	本体	0	15	远程	7	45	stat_elemental_damage×0.8	0.03	2	set_support | set_elemental	weapon_slow_in_zone effect_slow_in_zone=1	res://weapons/ranged/taser/1/taser_data.tres
+武器档位	电击枪 II	Taser II	weapon_taser_2	本体	1	31	远程	7	45	stat_elemental_damage×0.7	0.03	2	set_support | set_elemental	weapon_slow_in_zone effect_slow_in_zone=1	res://weapons/ranged/taser/2/taser_2_data.tres
+武器档位	电击枪 III	Taser III	weapon_taser_3	本体	2	61	远程	7	45	stat_elemental_damage×0.6	0.03	2	set_support | set_elemental	weapon_slow_in_zone effect_slow_in_zone=1	res://weapons/ranged/taser/3/taser_3_data.tres
+武器档位	电击枪 IV	Taser IV	weapon_taser_4	本体	3	122	远程	14	45	stat_elemental_damage×0.5	0.03	2	set_support | set_elemental	weapon_slow_in_zone effect_slow_in_zone=1	res://weapons/ranged/taser/4/taser_4_data.tres
+武器档位	雷剑 III	Thunder Sword III	weapon_thunder_sword_3	本体	2	119	近战	40	36	stat_melee_damage×1.25 + stat_elemental_damage×1.25	0.03	2	set_blade | set_elemental	weapon_projectiles_on_hit EFFECT_SLOW_PROJECTILES_ON_HIT=2	res://weapons/melee/thunder_sword/3/thunder_sword_3_data.tres
+武器档位	雷剑 IV	Thunder Sword IV	weapon_thunder_sword_4	本体	3	238	近战	75	27	stat_melee_damage×1.5 + stat_elemental_damage×1.5	0.03	2	set_blade | set_elemental	weapon_projectiles_on_hit EFFECT_SLOW_PROJECTILES_ON_HIT=4	res://weapons/melee/thunder_sword/4/thunder_sword_4_data.tres
+武器档位	火把	Torch	weapon_torch_1	本体	0	10	近战	1	31	stat_melee_damage×0.5 + stat_elemental_damage×0.5	0	1.5	set_primitive | set_elemental	weapon_burning effect_burning=0	res://weapons/melee/torch/1/torch_data.tres
+武器档位	火把 II	Torch II	weapon_torch_2	本体	1	22	近战	1	27	stat_melee_damage×0.65 + stat_elemental_damage×0.65	0	1.5	set_primitive | set_elemental	weapon_burning effect_burning=0	res://weapons/melee/torch/2/torch_2_data.tres
+武器档位	火把 III	Torch III	weapon_torch_3	本体	2	45	近战	1	22	stat_melee_damage×0.8 + stat_elemental_damage×0.8	0	1.5	set_primitive | set_elemental	weapon_burning effect_burning=0 | effect burning_spread=1	res://weapons/melee/torch/3/torch_3_data.tres
+武器档位	火把 IV	Torch IV	weapon_torch_4	本体	3	91	近战	1	13	stat_melee_damage×1 + stat_elemental_damage×1	0	1.5	set_primitive | set_elemental	weapon_burning effect_burning=0 | effect burning_spread=1	res://weapons/melee/torch/4/torch_4_data.tres
+武器档位	斩首剑 II	Vorpal Sword II	weapon_vorpal_sword_2	免费更新 New Dawn	1	55	近战	20	30	stat_melee_damage×1	0.03	2	set_blade | set_medieval	weapon_one_shot_on_hit =1	res://weapons/melee/vorpal_sword/2/vorpal_sword_2_data.tres
+武器档位	斩首剑 III	Vorpal Sword III	weapon_vorpal_sword_3	免费更新 New Dawn	2	100	近战	35	25	stat_melee_damage×1	0.03	2	set_blade | set_medieval	weapon_one_shot_on_hit =2	res://weapons/melee/vorpal_sword/3/vorpal_sword_3_data.tres
+武器档位	斩首剑 IV	Vorpal Sword IV	weapon_vorpal_sword_4	免费更新 New Dawn	3	200	近战	55	20	stat_melee_damage×1	0.03	2	set_blade | set_medieval	weapon_one_shot_on_hit =3	res://weapons/melee/vorpal_sword/4/vorpal_sword_4_data.tres
+武器档位	魔杖	Wand	weapon_wand_1	本体	0	10	远程	1	40	stat_elemental_damage×0.5	0	2	set_elemental	weapon_burning effect_burning=0	res://weapons/ranged/wand/1/wand_data.tres
+武器档位	魔杖 II	Wand II	weapon_wand_2	本体	1	22	远程	1	35	stat_elemental_damage×0.65	0	2	set_elemental	weapon_burning effect_burning=0	res://weapons/ranged/wand/2/wand_2_data.tres
+武器档位	魔杖 III	Wand III	weapon_wand_3	本体	2	45	远程	1	30	stat_elemental_damage×0.8	0	2	set_elemental	weapon_burning effect_burning=0	res://weapons/ranged/wand/3/wand_3_data.tres
+武器档位	魔杖 IV	Wand IV	weapon_wand_4	本体	3	91	远程	1	20	stat_elemental_damage×1	0	2	set_elemental	weapon_burning effect_burning=0	res://weapons/ranged/wand/4/wand_4_data.tres
+武器档位	扳手	Wrench	weapon_wrench_1	本体	0	20	近战	12	67	stat_melee_damage×1	0.03	2	set_tool	turret =1	res://weapons/melee/wrench/1/wrench_data.tres
+武器档位	扳手 II	Wrench II	weapon_wrench_2	本体	1	39	近战	16	63	stat_melee_damage×1	0.03	2	set_tool	turret =1	res://weapons/melee/wrench/2/wrench_2_data.tres
+武器档位	扳手 III	Wrench III	weapon_wrench_3	本体	2	74	近战	20	58	stat_melee_damage×1	0.03	2	set_tool	turret =1	res://weapons/melee/wrench/3/wrench_3_data.tres
+武器档位	扳手 IV	Wrench IV	weapon_wrench_4	本体	3	149	近战	24	54	stat_melee_damage×1	0.03	2	set_tool	turret =1	res://weapons/melee/wrench/4/wrench_4_data.tres
+地图	碰撞区域	Crash Zone	0	本体											res://zones/zone_1_crash/zone_crash_data.tres
+宠物	焰蜥蜴	Blazemander	blazemander	本体共用	0	1		0							res://entities/units/pet/blazemander/blazemander_item.tres
+宠物	Bonk狗	Bonk Dog	bonk_dog	本体共用	0	1		0							res://entities/units/pet/bonk_dog/bonk_dog_item.tres
+宠物	布雷机器人	Bot-O-Mine	bot_o_mine_pet	本体共用	0	1		0							res://entities/units/pet/bot_o_mine/bot_o_mine_item.tres
+宠物	猫特林机枪	Catling Gun	catling_gun	本体共用	0	1		0							res://entities/units/pet/catling_gun/catling_gun_item.tres
+宠物	蛾医生	Doc Moth	doc_moth	本体共用	0	1		0							res://entities/units/pet/doc_moth/doc_moth_item.tres
+宠物	水母盾	Jellyshield	jellyshield	本体共用	0	1									res://entities/units/pet/jellyshield/jellyshield_item.tres
+宠物	搜刮虫虫	Lootworm	lootworm	本体共用	0	1		0							res://entities/units/pet/lootworm/lootworm_item.tres
+宠物	鼠斯拉	Ratzilla	rocky	本体共用	0	1		4	25	stat_max_hp×0.1	0	1.5			res://entities/units/pet/ratzilla/ratzilla_item.tres
+宠物	替罪羔羊	Scapegoat	scapegoat	本体共用	0	1		1							res://entities/units/pet/scapegoat/scapegoat_item.tres
+宠物	流浪机器人	Wandering Bot	wanderingbot	本体共用	0	1		1	999999999	stat_engineering×0	0	1			res://entities/structures/turret/wandering_bot/wandering_bot_item.tres

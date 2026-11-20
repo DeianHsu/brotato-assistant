@@ -1,0 +1,30 @@
+{
+  "game_version": "1.2.0.1",
+  "scope": "本体与免费更新",
+  "tier_rules": [
+    {
+      "base_chance": 1,
+      "max_chance": 1,
+      "min_wave": 0,
+      "wave_bonus_chance": 0
+    },
+    {
+      "base_chance": 0,
+      "max_chance": 0.6,
+      "min_wave": 0,
+      "wave_bonus_chance": 0.06
+    },
+    {
+      "base_chance": 0,
+      "max_chance": 0.25,
+      "min_wave": 2,
+      "wave_bonus_chance": 0.02
+    },
+    {
+      "base_chance": 0,
+      "max_chance": 0.08,
+      "min_wave": 6,
+      "wave_bonus_chance": 0.0023
+    }
+  ]
+}
