@@ -2,22 +2,20 @@
 
 《土豆兄弟》（Brotato）的 Windows 单人模组，提供自动走位、构筑建议和商店交易。可选的自动开局模式会处理战后奖励，并用尚未通关的角色挑战难度 5。
 
-助手版本 **0.32.17**，适用 Steam 游戏版本 **1.2.0.1** 和 **1.2.0.3**，兼容模组加载器（ModLoader）**6.3.0**。支持本体和已安装的可下载内容（DLC）。
+助手版本 **0.32.18**，适用 Steam 游戏版本 **1.2.0.1** 和 **1.2.0.3**，兼容模组加载器（ModLoader）**6.3.0**。支持本体和已安装的可下载内容（DLC）。
 
 ## 安装与卸载
 
-1. 下载并解压仓库源码，退出游戏。
-2. 在 Steam 库打开游戏的「管理 → 浏览本地文件」，找到包含 `Brotato.exe` 的目录。
-3. 在源码根目录打开 PowerShell，将下方的 `-GamePath` 换成实际游戏目录，执行安装命令。
-4. 使用 Steam 启动游戏，按 **Alt+2** 查看助手预览。已有其他自动走位模组时，先在加载器配置中停用它。
+1. 退出游戏，双击安装目录里的 `Potato-AutoBuild-Setup.exe`。这个程序可以单独复制到任意目录运行。
+2. 确认程序找到的游戏目录，或通过「浏览」选择包含 `Brotato.exe` 的文件夹。可在 Steam 库通过游戏的「管理 → 浏览本地文件」找到它。
+3. 点击「安装 / 更新」。安装完成后，从 Steam 启动游戏，按 **Alt+2** 查看助手预览。已有其他自动走位模组时，先在加载器配置中停用它。
+
+卸载时退出游戏，打开同一个程序，选择游戏目录并点击「卸载」。程序会删除助手文件和它的自动加载入口，保留游戏存档和其他模组的配置。
+
+从源码安装或卸载也可在仓库根目录使用以下 PowerShell 命令，将 `-GamePath` 换成实际游戏目录。
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install.ps1 -GamePath 'C:\SteamLibrary\steamapps\common\Brotato'
-```
-
-卸载前先退出游戏，执行下方命令。卸载会撤销安装加入的自动加载入口，并保留其他模组的配置。
-
-```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\uninstall.ps1 -GamePath 'C:\SteamLibrary\steamapps\common\Brotato'
 ```
 
@@ -59,7 +57,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\uninstall.ps1 -Gam
 
 ## 生成安装目录
 
-在源码根目录运行以下命令。安装目录生成在 `dist/Potato-AutoBuild-<版本>/`，可复制到其他位置后安装或卸载。
+在 Windows 上从源码根目录运行以下命令。安装目录生成在 `dist/Potato-AutoBuild-<版本>/`，内含可独立运行的 `Potato-AutoBuild-Setup.exe`。
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\package.ps1

@@ -1,7 +1,7 @@
 {
   "name": "AutoBuild",
   "namespace": "Potato",
-  "version_number": "0.32.17",
+  "version_number": "0.32.18",
   "description": "单人自动战斗与购物。Shift+空格切换战斗，Alt+4 暂停或恢复。Alt+5 用尚未通关的角色开启难度 5，自动处理奖励、购物、开波和重试。",
   "website_url": "",
   "dependencies": [],
